@@ -1,0 +1,20 @@
+.headerButtons
+    .wrapper
+            a.header__logo(href="#") 
+                img(src="./img/colorLogo.svg", alt="Main Logo")
+            .header__nav-but-wrap
+                nav 
+                    ul.headerButtons__mainMenu
+                        li 
+                            a(href='#') О нас
+                        li
+                            a(href='#') Услуги
+                        li
+                            a(href='#') Вакансии
+                        li
+                            a(href='#') Новости
+                        li
+                            a(href='#') Соглашения
+                .headerButtons__buttons
+                    +btnBorder('войти')
+                    +btnFill('зарегистрироваться')

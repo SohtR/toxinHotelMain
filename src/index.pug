@@ -25,9 +25,22 @@ html
         link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
     body
         main
-           
+            include components/headerButtons/headerButtonsRus.pug
+            .landingBody
+                .landingBody__wrapper
+                    .landingBody__bg
+                        include components/cardSearchRoom/cardSearchRoom.pug
+                        .landingBody__bottomText
+                            p Лучшие номера для вашей работы, отдыха и просто вдохновения
+            include components/footerBig/footerBigRus.pug
+            
+            
+//- include ./components/scriptInjection/scriptInjection.pug
 
-include components/scriptInjection/scriptInjection.pug
 
+script
+    include ./components/twoInputRange/twoInputRange.js
+script
+    include ./components/dropdownGuest/guest.js
                             
                             

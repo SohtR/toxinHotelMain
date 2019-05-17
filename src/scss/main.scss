@@ -103,6 +103,44 @@ main{
   width: 100%;
 }
 
+.landingBody{
+  width: 100%;
+  background: $white;
+}
+.landingBody__bg{
+  width: 1440px;
+  height: 830px;
+  background: url(../img/landingImg.jpg) no-repeat 2px -70px;
+  background-size: cover; 
+  margin: 0 auto;
+  // position: relative;
+  .card{
+    margin: 4.8% 0 0 9.6%;
+  }
+  .landingBody__bottomText{
+    position: relative;
+  }
+  .landingBody__bottomText p{
+    text-align: right;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(31, 32, 65, 0.75);
+    position: absolute;
+    width: 297px;
+    right: 133px;
+    bottom: -364px;
+  }
+  
+}
+.landingBody__wrapper{
+  width: 100%;
+  display: flex;
+  // margin: auto 16%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
 @import '../components/header/header.scss';
 @import '../components/headerButtons/headerButtons.scss';
 @import '../components/footerBig/footerBig.scss';

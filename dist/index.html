@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <title>Toxin Hotel</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="style.css" rel="stylesheet"><script type="text/javascript" src="index.js"></script><script type="text/javascript" src="search.js"></script></head>
+  <body>
+    <main>
+      <div class="headerButtons">
+        <div class="wrapper"><a class="header__logo" href="#"> <img src="./img/colorLogo.svg" alt="Main Logo"></a>
+          <div class="header__nav-but-wrap">
+            <nav> 
+              <ul class="headerButtons__mainMenu">
+                <li> <a href="#">О нас</a></li>
+                <li><a href="#">Услуги</a></li>
+                <li><a href="#">Вакансии</a></li>
+                <li><a href="#">Новости</a></li>
+                <li><a href="#">Соглашения</a></li>
+              </ul>
+            </nav>
+            <div class="headerButtons__buttons"><a class="btn btnBorder">войти</a><a class="btn btnFill">зарегистрироваться</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="landingBody">
+        <div class="landingBody__wrapper">
+          <div class="landingBody__bg">
+            <div class="card searchRoom">
+              <h1>Найдем номера под ваши пожелания</h1>
+              <div class="flex">
+<div class="searchRoom__arrival">
+  <h3>пРиБыТие</h3>
+  <div class="dataDropdown">
+    <label for="start"> </label>
+    <input class="datepicker-here datepickers" id="start" type="text" placeholder="ДД.ММ.ГГГГ" data-clear-Button="true" data-apply-Button="true">
+  </div>
+</div>
+<div class="searchRoom__departure">
+  <h3>выезд</h3>
+  <div class="dataDropdown">
+    <label for="end"> </label>
+    <input class="datepicker-here datepickers" id="end" type="text" placeholder="ДД.ММ.ГГГГ" data-clear-Button="true" data-apply-Button="true">
+  </div>
+</div>
+              </div>
+              <div class="dropdownGuest">
+                <h3>гости</h3>
+<label for="dropdownGuest"> 
+  <input id="dropdownGuest" name="guest" type="text" readonly placeholder="Сколько гостей">
+</label>
+              </div><a class="btn btnLong">подобрать номер</a>
+            </div>
+            <div class="landingBody__bottomText">
+              <p>Лучшие номера для вашей работы, отдыха и просто вдохновения</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-big">
+        <div class="wrapper">
+          <div class="footer-big__main">
+            <div class="footer-big__logo"><a class="header__logo" href="#"> <img src="img/colorLogo.svg" alt="Main Logo"></a>
+              <p>Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</p>
+            </div>
+            <div class="footer-big__menus">
+              <div class="footer-big__list footer-big__nav">
+                <h3 class="footer-big__headline">навигация</h3>
+                <ul>
+                  <li><a href="">О нас</a></li>
+                  <li><a href="">Новости</a></li>
+                  <li><a href="">Служба поддержки</a></li>
+                  <li><a href="">Услуги</a></li>
+                </ul>
+              </div>
+              <div class="footer-big__list footer-big__about">
+                <h3 class="footer-big__headline">О нас</h3>
+                <ul>
+                  <li><a href="">О сервисе</a></li>
+                  <li><a href="">Наша команда</a></li>
+                  <li><a href="">Вакансии</a></li>
+                  <li><a href="">Инвесторы</a></li>
+                </ul>
+              </div>
+              <div class="footer-big__list footer-big__support">
+                <h3 class="footer-big__headline">Служба поддержки</h3>
+                <ul>
+                  <li><a href="">Соглашения</a></li>
+                  <li><a href="">Сообщества</a></li>
+                  <li><a href="">Связь с нами</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer-big__subscribe">
+              <h3 class="footer-big__headline">Подписка</h3>
+              <p>Получайте специальные предложения и новости сервиса</p>
+              <form class="formEmail" action="#" method="post">
+                <input type="email" name="email" placeholder="Email">
+                <input type="submit" value="">
+              </form>
+            </div>
+          </div>
+          <div class="footer-big__copyright">
+            <p>Copyright © 2018 Toxin отель. Все права зачищены.</p>
+            <div class="footer-big__social"> <a class="footer-big__twitter" href=""> </a><a class="footer-big__facebook" href=""> </a><a class="footer-big__instagram" href=""></a></div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
+<script>var now = new Date();
+var endDate = new Date(now.getTime() + 365*24*60*60*1000)
+var $start = $('#start'),
+    $end = $('#end');
+var $datepickers = $('.datepickers');
+
+$datepickers.datepicker({
+    language: 'ru',
+    // offset: ,
+    
+    minDate: now,
+    maxDate: endDate,
+    multipleDatesSeparator: "-",
+    range: true,
+      onSelect: function (fd, date) {
+        $end.data('datepicker')
+                .update('selectedDates', $start.data('datepicker').selectedDates);
+        var start = fd.split('-')[0]
+        var end = fd.split('-')[1];
+        if (end) {
+          $start.val(start);
+          $end.val(end);
+        } else {
+          $end.val('')
+        }
+        console.log($start.data('datepicker'));
+    }
+})
+</script>
+<script>$("input[name='guest']").guest({
+    categoryNames: ["Взрослые", "Дети", "Младенцы"],
+    categoryValues: false,
+    minValue: 0,
+    maxValue: 10,
+    closeOnOutsideClick: false,
+    showText: true,
+    delimiter: ", ",
+    align: "left",
+    fade: true,
+    useDisplay: false,
+    showZero: false,
+});
+</script>

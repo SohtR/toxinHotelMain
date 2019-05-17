@@ -7,7 +7,10 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const images = require('file-loader');
 const CopyWebpackPlugin= require('copy-webpack-plugin');
 module.exports = {
-  entry: './src/index.js' ,
+  entry: {
+    index: './src/index.js',
+    search: './src/search.js',
+  },
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name].js'
@@ -70,33 +73,25 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: 'style.css',
     }),
-    new HtmlWebpackPlugin({
-      inject: 'head',
-      hash: true,
-      template: './src/index.html',
-      filename: 'index.html'
-    }),
     new CopyWebpackPlugin([{
       from: './src/fonts',
       to: './fonts'
     },
     {
-      from: './src/favicon',
-      to: './favicon'
-    },
-    {
       from: './src/img',
       to: './img'
-    },
-    {
-      from: './src/uploads',
-      to: './uploads'
     }
     ]),
     new HtmlWebpackPlugin({
       inject: 'head',
-      
-      template: './src/index.pug'
+      template: './src/search.pug',
+      filename: 'search.html',
+      chunks: ['search']
+    }),
+    new HtmlWebpackPlugin({
+      inject: 'head',
+      template: './src/index.pug',
+      filename: 'index.html'
     })
     // new webpack.ProvidePlugin({
     //   $: "./src/js/jquery-1.12.4.min.js",

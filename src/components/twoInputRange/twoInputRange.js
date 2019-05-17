@@ -7,11 +7,7 @@ var $datepickers = $('.datepickers');
 $datepickers.datepicker({
     language: 'ru',
     // offset: ,
-    navTitles: {
-      days: '<i>yyyy</i> MM',
-      months: 'yyyy',
-      years: 'yyyy1 - yyyy2'
-    },
+    
     minDate: now,
     maxDate: endDate,
     multipleDatesSeparator: "-",
