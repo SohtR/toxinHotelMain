@@ -33,6 +33,15 @@ html
                         include components/dataDDFilter/dataDDFilter.pug
                         h3 гости
                         include components/dropdownGuest/dropdownGuest.pug
+                        +rangeSlider('диапазон цены')
+                        p.leftSide__rangeExplain Стоимость за сутки пребывания в номере
+                        h3 checkbox buttons
+                        include components/checkBoxes/checkBoxes.pug
+                        h3.leftSide__richCheckBox доступность
+                        include components/richCheckBox/richCheckBox.pug
+                        h3.leftSide__roomFeatures удобства номера
+                        include components/dropdownRoom/dropdownRoom.pug
+                        include components/expendCheckBox/expendCheckBox.pug
                     .rightSide
             include components/footerBig/footerBigRus.pug
             
@@ -40,5 +49,7 @@ html
 //- include ./components/scriptInjection/scriptInjection.pug
 script
     include ./components/dropdownGuest/guest.js
+script
+    include ./components/dropdownRoom/ncs.js
                             
                             

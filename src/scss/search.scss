@@ -120,7 +120,24 @@ main{
   #dropdownGuest{
     width: 266px;
   }
-  
+  .rangeSlider{
+    margin: 5px 0 0 0;
+  }
+  .leftSide__rangeExplain{
+    font-size: 12px;
+    line-height: 14px;
+    color: rgba(31, 32, 65, 0.5);
+    margin: 14px 0 30px 0;
+  }
+  .leftSide__richCheckBox{
+    margin: 53px 0 0 0;
+  }
+  .leftSide__roomFeatures{
+    margin: 67px 0 4px 0;
+  }
+  ul.exCheckList li:first-child{
+    margin: 19px 0 10px 0;
+  }
 }
 
 .rightSide{

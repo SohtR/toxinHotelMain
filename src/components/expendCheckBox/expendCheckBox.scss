@@ -1,7 +1,7 @@
 .exCheckList {
-    max-height: 0em;
+    max-height: 0.2em;
     overflow: hidden;
-    margin: 18px 0 0 24px;
+    margin: 18px 0 0 0px;
     padding: 0;
     transition: max-height 0.35s ease-in;
     width: 266px;
@@ -10,7 +10,7 @@
       height: 20px;
     }
     #expander:checked ~ & {
-      max-height: 17em;
+      max-height: 19em;
     }
     input[type="checkbox"]{
       display:none;            
@@ -50,12 +50,12 @@
     }
     
     &:after {
-      content: 'Expandable checkbox list';
+      content: 'Дополнительные удобства';
       white-space: nowrap;
       position: absolute;
       cursor: pointer;
       bottom: 0;
-      left: 2em;
+      left: 0em;
       background: url(../img/arrowDown.png) no-repeat 238px;
       width: 266px;
       font-family: 'MontserratBold';
@@ -67,7 +67,7 @@
       
     }
     #expander:checked + &:after {
-        content: 'Expandable checkbox list';
+        content: 'Дополнительные удобства';
         background: url(../img/expand_more.png) no-repeat 238px;
         width: 266px;
       }

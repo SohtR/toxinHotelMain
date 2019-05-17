@@ -36,6 +36,86 @@
 <label for="dropdownGuest"> 
   <input id="dropdownGuest" name="guest" type="text" readonly placeholder="Сколько гостей">
 </label>
+            <div class="rangeSlider">
+              <label for="amount">диапазон цены</label>
+              <input type="text" disabled id="amount" readonly>
+              <div id="slider-range"></div>
+            </div>
+            <p class="leftSide__rangeExplain">Стоимость за сутки пребывания в номере</p>
+            <h3>checkbox buttons</h3>
+<form class="checkboxes" action="#">
+  <ul class="CheckList">
+    <li>
+      <input type="checkbox" id="bfirst" name="first" hidden>
+      <label for="bfirst">Можно курить</label>
+    </li>
+    <li>
+      <input type="checkbox" id="bsecond" name="first" checked hidden>
+      <label for="bsecond">Можно с питомцами</label>
+    </li>
+    <li>
+      <input type="checkbox" id="bthird" name="first" checked hidden>
+      <label for="bthird">Можно пригласить гостей (до 10 человек)</label>
+    </li>
+  </ul>
+</form>
+            <h3 class="leftSide__richCheckBox">доступность</h3>
+<form class="richCheckbox" action="#">
+  <ul class="CheckList">
+    <li>
+      <input type="checkbox" id="qfirst" name="first" hidden>
+      <label for="qfirst">Широкий коридор
+        <p>Ширина коридоров в номере не менее 91 см.</p>
+      </label>
+    </li>
+    <li>
+      <input type="checkbox" id="qsecond" name="first" checked hidden>
+      <label for="qsecond">Помощник для инвалидов
+        <p>На 1 этаже вас встретит специалист  и проводит до номера.</p>
+      </label>
+    </li>
+  </ul>
+</form>
+            <h3 class="leftSide__roomFeatures">удобства номера</h3>
+<input id="dropdown" name="NCS" type="text" readonly placeholder="Параметры комнаты">
+<form class="expendCheck" action="#"> 
+  <input id="expander" type="checkbox">
+  <label class="exCheckLabel" for="expander"></label>
+  <ul class="exCheckList">
+    <li>
+      <input type="checkbox" id="cfirst" name="first" hidden>
+      <label for="cfirst">Завтрак</label>
+    </li>
+    <li>
+      <input type="checkbox" id="csecond" name="first" checked hidden>
+      <label for="csecond">Письменный стол</label>
+    </li>
+    <li>
+      <input type="checkbox" id="cthird" name="first" checked hidden>
+      <label for="cthird">Стул для кормления</label>
+    </li>
+    <li>
+      <input type="checkbox" id="cfourth" name="first" checked hidden>
+      <label for="cfourth">Кроватка</label>
+    </li>
+    <li>
+      <input type="checkbox" id="cfifth" name="first" hidden>
+      <label for="cfifth">Телевизор</label>
+    </li>
+    <li>
+      <input type="checkbox" id="csix" name="first" hidden>
+      <label for="csix">Шампунь</label>
+    </li>
+    <li>
+      <input type="checkbox" id="cseven" name="first" hidden>
+      <label for="cseven">Телевизор</label>
+    </li>
+    <li>
+      <input type="checkbox" id="ceight" name="first" hidden>
+      <label for="ceight">Шампунь</label>
+    </li>
+  </ul>
+</form>
           </div>
           <div class="rightSide"></div>
         </div>
@@ -98,6 +178,21 @@
     minValue: 0,
     maxValue: 10,
     closeOnOutsideClick: false,
+    showText: true,
+    delimiter: ", ",
+    align: "left",
+    fade: true,
+    useDisplay: false,
+    showZero: false,
+});
+</script>
+<script>
+$("input[name='NCS']").NCS({
+    categoryNames: ["Спальни", "Кровати", "Ванные комнаты"],
+    categoryValues: false,
+    minValue: 0,
+    maxValue: 10,
+    closeOnOutsideClick: true,
     showText: true,
     delimiter: ", ",
     align: "left",

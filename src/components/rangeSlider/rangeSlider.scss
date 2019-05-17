@@ -1,12 +1,23 @@
+.rangeSlider{
+    width: 266px;
+    label{
+        font-family: 'MontserratBold';
+        font-size: 12px;
+        line-height: 15px;
+        text-transform: uppercase;
+        color: #1F2041;
+    }
+}
 #amount{
-    background: $bgColor;
+    background: $white;
     border:0;
     font-family: 'Montserrat';
     font-size: 12px;
     text-align: right;
     text-transform: uppercase;
     color: rgba(31, 32, 65, 0.5);
-    margin: 0 0 20px 0;
+    margin: 0 0 22px 0;
+    width: 140px;
   }
   
   
