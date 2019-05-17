@@ -71,7 +71,7 @@ module.exports = {
     //   {filename: 'style.[hash].css', disable: false, allChunks: true }
     // ),
     new MiniCssExtractPlugin({
-      filename: 'style.css',
+      filename: '[name].css',
     }),
     new CopyWebpackPlugin([{
       from: './src/fonts',
@@ -91,7 +91,8 @@ module.exports = {
     new HtmlWebpackPlugin({
       inject: 'head',
       template: './src/index.pug',
-      filename: 'index.html'
+      filename: 'index.html',
+      chunks: ['index']
     })
     // new webpack.ProvidePlugin({
     //   $: "./src/js/jquery-1.12.4.min.js",

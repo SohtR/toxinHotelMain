@@ -1,4 +1,4 @@
-import "./scss/main.scss";
+import "./scss/search.scss";
 import "./js/numbercategoryselector.js";
 import "./components/dropdownGuest/numbercategoryselectorGuest.js";
 import "./components/dropdownGuest2/numbercategoryselectorGuest2.js";

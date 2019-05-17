@@ -34,7 +34,7 @@ main {
   margin: 0 auto;
   width: 100%;
   display: flex;
-  background: #f4f4f6 url(./img/mainLogo.svg) no-repeat 14.1% 1.875rem;
+  background: #fff;
   flex-wrap: wrap; }
 
 .form-elements {
@@ -85,6 +85,25 @@ main {
 
 .cards {
   width: 100%; }
+
+.searchBody {
+  display: flex;
+  width: 100%; }
+
+.leftSide {
+  outline: 1px solid black;
+  width: 27.58%;
+  padding: 30px 0 0 0; }
+  .leftSide h3 {
+    margin: 0 0 5px 0; }
+  .leftSide .filter {
+    margin: 0 0 20px 0; }
+  .leftSide #dropdownGuest {
+    width: 266px; }
+
+.rightSide {
+  outline: 1px solid black;
+  width: 72.42%; }
 
 .landingBody {
   width: 100%;

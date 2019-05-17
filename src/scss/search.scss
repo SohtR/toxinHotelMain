@@ -167,3 +167,6 @@ main{
 @import '../components/emailSubscribe/emailSubscribe.scss';
 @import '../components/textField/textField.scss';
 @import '../components/toggleButton/toggleButton.scss';
+div.guest.parent{
+  min-width: 266px;
+}

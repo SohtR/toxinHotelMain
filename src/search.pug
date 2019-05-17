@@ -26,11 +26,19 @@ html
     body
         main
             include components/headerButtons/headerButtonsRus.pug
-            
+            .searchBody
+                .wrapper
+                    .leftSide
+                        h3 даты пребывания в отеле
+                        include components/dataDDFilter/dataDDFilter.pug
+                        h3 гости
+                        include components/dropdownGuest/dropdownGuest.pug
+                    .rightSide
             include components/footerBig/footerBigRus.pug
             
             
 //- include ./components/scriptInjection/scriptInjection.pug
-
+script
+    include ./components/dropdownGuest/guest.js
                             
                             

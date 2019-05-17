@@ -7,7 +7,7 @@
     <meta name="viewport" content="initial-scale=1.0, width=device-width">
     <title>Toxin Hotel</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <script type="text/javascript" src="search.js"></script></head>
+  <link href="search.css" rel="stylesheet"><script type="text/javascript" src="search.js"></script></head>
   <body>
     <main>
       <div class="headerButtons">
@@ -25,6 +25,19 @@
             <div class="headerButtons__buttons"><a class="btn btnBorder">войти</a><a class="btn btnFill">зарегистрироваться</a>
             </div>
           </div>
+        </div>
+      </div>
+      <div class="searchBody">
+        <div class="wrapper">
+          <div class="leftSide">
+            <h3>даты пребывания в отеле</h3>
+<input class="datepicker-here filter" type="text" data-range="true" data-multiple-dates-separator=" - " data-clear-Button="true" data-apply-Button="true">
+            <h3>гости</h3>
+<label for="dropdownGuest"> 
+  <input id="dropdownGuest" name="guest" type="text" readonly placeholder="Сколько гостей">
+</label>
+          </div>
+          <div class="rightSide"></div>
         </div>
       </div>
       <div class="footer-big">
@@ -79,3 +92,17 @@
     </main>
   </body>
 </html>
+<script>$("input[name='guest']").guest({
+    categoryNames: ["Взрослые", "Дети", "Младенцы"],
+    categoryValues: false,
+    minValue: 0,
+    maxValue: 10,
+    closeOnOutsideClick: false,
+    showText: true,
+    delimiter: ", ",
+    align: "left",
+    fade: true,
+    useDisplay: false,
+    showZero: false,
+});
+</script>
