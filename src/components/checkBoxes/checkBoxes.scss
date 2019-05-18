@@ -1,5 +1,5 @@
 .CheckList {
-    margin: 12px 0 0px 0;
+    margin: 17px 0 0px 0;
     padding: 0;
     width: 266px;
     li{
@@ -27,7 +27,8 @@
       box-sizing: border-box;
       border-radius: 4px;
       position: relative;
-      top: 4px;
+      top: 0px;
+      float: left;
     }
     input[type="checkbox"]:checked + label::before {
       background: url(../img/checked.png) no-repeat top left;

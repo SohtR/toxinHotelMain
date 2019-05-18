@@ -243,7 +243,8 @@ main {
   margin: 0rem 0 0 0;
   padding: 6.25rem 0 0px 0px;
   display: flex;
-  position: relative; }
+  position: relative;
+  border: 1px solid #f4f4f6; }
 
 .footer-big > .wrapper {
   flex-wrap: wrap; }
@@ -457,7 +458,7 @@ main {
     font-family: 'MontserratBold'; }
 
 .CheckList {
-  margin: 12px 0 0px 0;
+  margin: 17px 0 0px 0;
   padding: 0;
   width: 266px; }
   .CheckList li {
@@ -482,7 +483,8 @@ main {
     box-sizing: border-box;
     border-radius: 4px;
     position: relative;
-    top: 4px; }
+    top: 0px;
+    float: left; }
   .CheckList input[type="checkbox"]:checked + label::before {
     background: url(./img/checked.png) no-repeat top left;
     border: none; }
@@ -1688,7 +1690,7 @@ input[name='NCS'] {
   border: 1px solid rgba(31, 32, 65, 0.25);
   box-sizing: border-box;
   border-radius: 4px 4px 0 0;
-  padding: 0 24px 0px 15px;
+  padding: 0 35px 0px 15px;
   font-size: 14px;
   line-height: 24px;
   margin: 0 0 23px 0;
@@ -1706,7 +1708,7 @@ div.NCS.parent {
   border: 1px solid rgba(31, 32, 65, 0.25);
   border-radius: 0 0 4px 4px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
-  padding: 3px 7px 0px 11px;
+  padding: 9px 7px 0px 11px;
   text-align: center;
   overflow: hidden;
   min-width: 266px;
@@ -2229,10 +2231,10 @@ html[xmlns] .flexslider .slides {
   content: '\e315'; }
 
 .flex-direction-nav .flex-prev {
-  left: -50px; }
+  left: 0px; }
 
 .flex-direction-nav .flex-next {
-  right: -50px;
+  right: 0px;
   text-align: right; }
 
 .flexslider:hover .flex-direction-nav .flex-prev {
@@ -2283,10 +2285,10 @@ html[xmlns] .flexslider .slides {
 .flex-control-nav {
   width: 100%;
   position: absolute;
-  bottom: 5px;
+  bottom: 4px;
   text-align: center;
   z-index: 2;
-  left: 89px; }
+  left: 101px; }
 
 .flex-control-nav li {
   margin: 0 2px;
@@ -2441,12 +2443,12 @@ html[xmlns] .flexslider .slides {
 
 .roomSlider {
   padding: 0;
-  margin: 20px 0 0 0; }
+  margin: 21px 0 0 0; }
   .roomSlider .roomSlider__priceHeadline {
     margin: 20px 0 0 20px;
     justify-content: space-between; }
   .roomSlider .roomSlider__price {
-    margin: 3px 12px 0px 0px; }
+    margin: 3px 10px 0px 0px; }
   .roomSlider .roomSlider__number {
     font-family: 'MontserratBold';
     font-size: 19px;
@@ -2464,7 +2466,7 @@ html[xmlns] .flexslider .slides {
     text-transform: uppercase;
     color: #BC9CFF; }
   .roomSlider .roomSlider__rating {
-    margin: 16px 0 17px 0;
+    margin: 18px 0 15px 0;
     justify-content: space-between; }
   .roomSlider .rating {
     margin: 0px 0 0 20px; }

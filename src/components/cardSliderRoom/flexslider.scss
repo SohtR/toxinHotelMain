@@ -148,10 +148,10 @@ html[xmlns] .flexslider .slides {
   content: '\e315';
 }
 .flex-direction-nav .flex-prev {
-  left: -50px;
+  left: 0px;
 }
 .flex-direction-nav .flex-next {
-  right: -50px;
+  right: 0px;
   text-align: right;
 }
 .flexslider:hover .flex-direction-nav .flex-prev {
@@ -202,10 +202,10 @@ html[xmlns] .flexslider .slides {
 .flex-control-nav {
   width: 100%;
   position: absolute;
-  bottom: 5px;
+  bottom: 4px;
   text-align: center;
   z-index: 2;
-  left: 89px;
+  left: 101px;
 }
 .flex-control-nav li {
   margin: 0 2px;

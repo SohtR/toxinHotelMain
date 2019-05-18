@@ -10,13 +10,13 @@
   }
   .roomSlider{
       padding: 0;
-      margin: 20px 0 0 0;
+      margin: 21px 0 0 0;
       .roomSlider__priceHeadline{
         margin: 20px 0 0 20px;
         justify-content: space-between;
       }
       .roomSlider__price{
-        margin: 3px 12px 0px 0px;
+        margin: 3px 10px 0px 0px;
       }
       .roomSlider__number{
         font-family: 'MontserratBold';
@@ -38,7 +38,7 @@
         color: $purple;
       }
     .roomSlider__rating{
-      margin: 16px 0 17px 0;
+      margin: 18px 0 15px 0;
       justify-content: space-between;
     }  
     .rating{
