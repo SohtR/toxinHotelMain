@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <title>Toxin Hotel</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="roomDetail.css" rel="stylesheet"><script type="text/javascript" src="roomDetail.js"></script></head>
+  <body>
+    <main>
+      <div class="headerButtons">
+        <div class="wrapper"><a class="header__logo" href="#"> <img src="./img/colorLogo.svg" alt="Main Logo"></a>
+          <div class="header__nav-but-wrap">
+            <nav> 
+              <ul class="headerButtons__mainMenu">
+                <li> <a href="#">О нас</a></li>
+                <li><a href="#">Услуги</a></li>
+                <li><a href="#">Вакансии</a></li>
+                <li><a href="#">Новости</a></li>
+                <li><a href="#">Соглашения</a></li>
+              </ul>
+            </nav>
+            <div class="headerButtons__buttons"><a class="btn btnBorder">войти</a><a class="btn btnFill">зарегистрироваться</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="roomDetailBody">
+        <div class="roomDetailBody__wrapper">
+          <div class="roomDetailBody__images">
+            <div class="roomDetailBody__bigImg"></div>
+            <div class="roomDetailBody__smallImg">
+              <div class="roomDetailBody__topImg"></div>
+              <div class="roomDetailBody__bottomImg"></div>
+            </div>
+          </div>
+        </div>
+        <div class="wrapper">
+          <div class="roomDetailBody__content">
+            <div class="roomDetailBody__leftSide">
+              <div class="roomDetailBody__top">
+                <div class="roomDetailBody__roomFeatures">
+                  <h2>Сведения о номере</h2>
+                  <div class="roomFeature comfort"><img src="./img/comfort.png" alt="11">
+                    <p class="roomFeature__headline">Комфорт</p>
+                    <p>Шумопоглощающие стены</p>
+                  </div>
+                  <div class="roomFeature udobstvo"><img src="./img/udobstvo.png" alt="11">
+                    <p class="roomFeature__headline">Удобство</p>
+                    <p>Окно в каждой из спален</p>
+                  </div>
+                  <div class="roomFeature uyut"><img src="./img/uyut.png" alt="11">
+                    <p class="roomFeature__headline">Уют</p>
+                    <p>Номер оснащён камином</p>
+                  </div>
+                </div>
+                <div class="roomDetailBody__pieChart">
+                  <h2>Впечатления от номера</h2>
+<div class="pieChart">
+  <div class="graph-container">
+    <svg></svg>
+    <div class="tooltip">
+      <p class="amount"></p>
+      <p class="item"></p>
+    </div>
+  </div>
+  <div class="pieChart__legend">
+    <p class="pieChart__Ellips pieChart__Ellips-orange">Великолепно</p>
+    <p class="pieChart__Ellips pieChart__Ellips-green">Хорошо </p>
+    <p class="pieChart__Ellips pieChart__Ellips-purple">Удовлетворительно</p>
+    <p class="pieChart__Ellips pieChart__Ellips-black">Разочарован</p>
+  </div>
+</div>
+                </div>
+              </div>
+              <div class="roomDetailBody__bottom">
+                <div class="roomDetailBody__reviews">
+                  <div class="roomDetailBody__reviewsHeadline">
+                    <h2>Отзывы посетителей номера</h2>
+                    <p>2 отзыва</p>
+                  </div>
+                  <div class="review">
+                    <div class="review__topBlock"><img class="review__avatar" src="./img/avatar2.jpg" alt="avatar">
+                      <p class="review__name"><b>Мурад Сарафанов</b> <br>5 дней назад</p>
+                    </div>
+                    <div class="review__bottomBlock">
+                      <div class="review__like"><a class="btn-counter my-counter my" href="#" title="Love it" data-count="11"><span></span></a>
+                      </div>
+                      <p class="review__content">Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.</p>
+                    </div>
+                  </div>
+                  <div class="review">
+                    <div class="review__topBlock"><img class="review__avatar" src="./img/avatar1.jpg" alt="avatar">
+                      <p class="review__name"><b>Патрисия Стёклышкова</b> <br>Неделю назад</p>
+                    </div>
+                    <div class="review__bottomBlock">
+                      <div class="review__like"><a class="btn-counter my-counter my" href="#" title="Love it" data-count="2"><span></span></a>
+                      </div>
+                      <p class="review__content">Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="roomDetailBody__lists">
+                  <div class="roomDetailBody__bullet">
+                    <h2>Правила</h2>
+<ul class="bulletList">
+  <li>Нельзя с питомцами</li>
+  <li>Без вечеринок и мероприятий</li>
+  <li>Время прибытия — после 13:00, а выезд до 12:00  </li>
+</ul>
+                  </div>
+                  <div class="roomDetailBody__cancel">
+                    <h2>Отмена</h2>
+                    <p class="roomDetailBody__cancelText">Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="roomDetailBody__rightSide">
+              <div class="card roomDetail">
+                <div class="flex roomDetail__priceHeadline">
+                  <p class="roomDetail__number"><span class="roomDetail__num"> №</span>888 <span class="roomDetail__lux">люкс</span></p>
+                  <p class="roomDetail__price">9 990₽ в сутки</p>
+                </div>
+                <div class="flex">
+<div class="searchRoom__arrival">
+  <h3>пРиБыТие</h3>
+  <div class="dataDropdown">
+    <label for="start"> </label>
+    <input class="datepicker-here datepickers" id="start" type="text" placeholder="ДД.ММ.ГГГГ" data-clear-Button="true" data-apply-Button="true">
+  </div>
+</div>
+<div class="searchRoom__departure">
+  <h3>выезд</h3>
+  <div class="dataDropdown">
+    <label for="end"> </label>
+    <input class="datepicker-here datepickers" id="end" type="text" placeholder="ДД.ММ.ГГГГ" data-clear-Button="true" data-apply-Button="true">
+  </div>
+</div>
+                </div>
+                <div class="dropdownGuest">
+                  <h3>гости</h3>
+<label for="dropdownGuest"> 
+  <input id="dropdownGuest" name="guest" type="text" readonly placeholder="Сколько гостей">
+</label>
+                </div>
+                <table class="roomDetail__priceTable">
+                  <tr>
+                    <td class="roomDetail__leftCol">9 990₽ х 4 суток</td>
+                    <td></td>
+                    <td class="roomDetail__rightCol">39 960₽</td>
+                  </tr>
+                  <tr>
+                    <td class="roomDetail__leftCol">Сбор за услуги: скидка 2 179₽</td>
+                    <td> <a class="circle" href="#">i</a></td>
+                    <td class="roomDetail__rightCol">0₽</td>
+                  </tr>
+                  <tr>
+                    <td class="roomDetail__leftCol">Сбор за дополнительные услуги</td>
+                    <td><a class="circle" href="#">i</a></td>
+                    <td class="roomDetail__rightCol">300₽</td>
+                  </tr>
+                </table>
+                <div class="flex roomDetail__total">
+                  <p>Итого</p>
+                  <div class="roomDetail__borderDashed"></div>
+                  <p class="roomDetail__totalSum">38 081₽</p>
+                </div><a class="btn btnLong">Забронировать</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-big">
+        <div class="wrapper">
+          <div class="footer-big__main">
+            <div class="footer-big__logo"><a class="header__logo" href="#"> <img src="img/colorLogo.svg" alt="Main Logo"></a>
+              <p>Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</p>
+            </div>
+            <div class="footer-big__menus">
+              <div class="footer-big__list footer-big__nav">
+                <h3 class="footer-big__headline">навигация</h3>
+                <ul>
+                  <li><a href="">О нас</a></li>
+                  <li><a href="">Новости</a></li>
+                  <li><a href="">Служба поддержки</a></li>
+                  <li><a href="">Услуги</a></li>
+                </ul>
+              </div>
+              <div class="footer-big__list footer-big__about">
+                <h3 class="footer-big__headline">О нас</h3>
+                <ul>
+                  <li><a href="">О сервисе</a></li>
+                  <li><a href="">Наша команда</a></li>
+                  <li><a href="">Вакансии</a></li>
+                  <li><a href="">Инвесторы</a></li>
+                </ul>
+              </div>
+              <div class="footer-big__list footer-big__support">
+                <h3 class="footer-big__headline">Служба поддержки</h3>
+                <ul>
+                  <li><a href="">Соглашения</a></li>
+                  <li><a href="">Сообщества</a></li>
+                  <li><a href="">Связь с нами</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer-big__subscribe">
+              <h3 class="footer-big__headline">Подписка</h3>
+              <p>Получайте специальные предложения и новости сервиса</p>
+              <form class="formEmail" action="#" method="post">
+                <input type="email" name="email" placeholder="Email">
+                <input type="submit" value="">
+              </form>
+            </div>
+          </div>
+          <div class="footer-big__copyright">
+            <p>Copyright © 2018 Toxin отель. Все права зачищены.</p>
+            <div class="footer-big__social"> <a class="footer-big__twitter" href=""> </a><a class="footer-big__facebook" href=""> </a><a class="footer-big__instagram" href=""></a></div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
+<script>
+const data = [
+    ['ok', 25],
+    ['good', 25],
+    ['excellent', 50],
+    ['bad', 0]
+]
+  
+// const margin = { top: 100, right: 70, bottom: 100, left: 65 };
+const width = 120;
+const height = 120;
+const r_width= 200;
+const r_height = 200;
+const radius = Math.min(r_width, r_height) / 2;
+
+const tooltip = d3.select('.tooltip')
+    .style('display', 'inherit');
+const amount = d3.select('.amount');
+const item = d3.select('.item');
+amount
+        .text(260);
+item
+        .text(`Голосов`);
+
+const svg = d3.select('svg')
+.attr('width', width)
+.attr('height', height)
+.append('g')
+.attr('class', 'group-container')
+    .attr('transform', `translate(${width / 2}, ${height / 2})`);
+
+const color = d3.scaleOrdinal([
+'url(#purple)',
+'url(#green)',
+'url(#orange)',
+
+]);
+
+
+
+const pie = d3.pie()
+.sort(null)
+.value((d) => d[1]);
+
+const path = d3.arc()
+.outerRadius(radius - 40)
+.innerRadius(radius - 45);
+
+const pathTwo = d3.arc()
+.outerRadius(radius - 40)
+.innerRadius(radius - 50);
+
+const arc = svg.selectAll('.arc')
+.data(pie(data))
+.enter().append('g')
+.attr('class', 'arc')
+
+
+
+var purple = arc.append("linearGradient")
+    .attr("id", "purple")
+    .attr("y1", "0%")
+    .attr("y2", "100%");
+purple.append("stop")
+    .attr('class', 'start')
+    .attr("offset", "0%")
+    .attr("stop-color", "#bc9cff")
+    .attr("stop-opacity", 1);
+purple.append("stop")
+    .attr('class', 'end')
+    .attr("offset", "100%")
+    .attr("stop-color", "#8BA4F9")
+    .attr("stop-opacity", 1);
+
+var green = arc.append("linearGradient")
+    .attr("id", "green")
+    .attr("x1", "100%")
+    .attr("x2", "0%");
+green.append("stop")
+    .attr('class', 'start')
+    .attr("offset", "0%")
+    .attr("stop-color", "#6FCF97")
+    .attr("stop-opacity", 1);
+green.append("stop")
+    .attr('class', 'end')
+    .attr("offset", "100%")
+    .attr("stop-color", "#66D2EA")
+    .attr("stop-opacity", 1);
+
+var orange = arc.append("linearGradient")
+    .attr("id", "orange")
+    .attr("y1", "00%")
+    .attr("y2", "100%");
+orange.append("stop")
+    .attr('class', 'start')
+    .attr("offset", "0%")
+    .attr("stop-color", "#FFE39C")
+    .attr("stop-opacity", 1);
+orange.append("stop")
+    .attr('class', 'end')
+    .attr("offset", "100%")
+    .attr("stop-color", "#FFBA9C")
+    .attr("stop-opacity", 1);
+
+
+arc.append('path')
+.attr('d', path)
+.attr('fill', (d, i) => color(i))
+.attr('stroke', (d, i) => "none")
+// .attr('stroke', (d, i) => color(i))
+.on('mouseover', function(d) {
+    d3.select(this)
+    .transition()
+    .style('cursor', 'pointer')
+    .attr('d', pathTwo);
+
+    // const tooltip = d3.select('.tooltip')
+    //   .style('display', 'inherit');
+
+    // const amount = d3.select('.amount');
+    // const item = d3.select('.item');
+
+    // amount
+    //.text(`${d.data[1]}`);
+
+    // item
+    // .text(`${d.data[0]}`);
+})
+.on('mouseout', function(d) {
+    // const tooltip = d3.select('.tooltip')
+    //   .style('display', 'none')
+
+    d3.select(this)
+    .transition()
+    .attr('d', path);
+});
+
+</script>
+<script>
+    $('.btn-counter').on('click', function(event, count) {
+    event.preventDefault();
+    
+    var $this = $(this),
+        count = $this.attr('data-count'),
+        active = $this.hasClass('active'),
+        multiple = $this.hasClass('multiple-count');
+    
+    $.fn.noop = $.noop;
+    $this.attr('data-count', ! active || multiple ? ++count : --count  )[multiple ? 'noop' : 'toggleClass']('active');
+    
+  });
+
+</script>
+<script>var now = new Date();
+var endDate = new Date(now.getTime() + 365*24*60*60*1000)
+var $start = $('#start'),
+    $end = $('#end');
+var $datepickers = $('.datepickers');
+
+$datepickers.datepicker({
+    language: 'ru',
+    // offset: ,
+    
+    minDate: now,
+    maxDate: endDate,
+    multipleDatesSeparator: "-",
+    range: true,
+      onSelect: function (fd, date) {
+        $end.data('datepicker')
+                .update('selectedDates', $start.data('datepicker').selectedDates);
+        var start = fd.split('-')[0]
+        var end = fd.split('-')[1];
+        if (end) {
+          $start.val(start);
+          $end.val(end);
+        } else {
+          $end.val('')
+        }
+        console.log($start.data('datepicker'));
+    }
+})
+</script>
+<script>$("input[name='guest']").guest({
+    categoryNames: ["Взрослые", "Дети", "Младенцы"],
+    categoryValues: false,
+    minValue: 0,
+    maxValue: 10,
+    closeOnOutsideClick: false,
+    showText: true,
+    delimiter: ", ",
+    align: "left",
+    fade: true,
+    useDisplay: false,
+    showZero: false,
+});
+</script>

@@ -10,6 +10,7 @@ module.exports = {
   entry: {
     index: './src/index.js',
     search: './src/search.js',
+    roomDetail: './src/roomDetail.js',
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -93,6 +94,12 @@ module.exports = {
       template: './src/index.pug',
       filename: 'index.html',
       chunks: ['index']
+    }),
+    new HtmlWebpackPlugin({
+      inject: 'head',
+      template: './src/roomDetail.pug',
+      filename: 'roomDetail.html',
+      chunks: ['roomDetail']
     })
     // new webpack.ProvidePlugin({
     //   $: "./src/js/jquery-1.12.4.min.js",

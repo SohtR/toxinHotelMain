@@ -27,41 +27,7 @@ html
     body
         main
             include components/headerButtons/headerButtonsRus.pug
-            .searchBody
-                .wrapper
-                    .leftSide
-                        h3 даты пребывания в отеле
-                        include components/dataDDFilter/dataDDFilter.pug
-                        h3 гости
-                        include components/dropdownGuest/dropdownGuest.pug
-                        +rangeSlider('диапазон цены')
-                        p.leftSide__rangeExplain Стоимость за сутки пребывания в номере
-                        h3 checkbox buttons
-                        include components/checkBoxes/checkBoxes.pug
-                        h3.leftSide__richCheckBox доступность
-                        include components/richCheckBox/richCheckBox.pug
-                        h3.leftSide__roomFeatures удобства номера
-                        include components/dropdownRoom/dropdownRoom.pug
-                        include components/expendCheckBox/expendCheckBox.pug
-                    .rightSide
-                        h1 Номера, которые мы для вас подобрали
-                        .rightSide__searchResult
-                            +sliderRoom('888', '9 990', '145', 'люкс')
-                            +sliderRoom('840', '9 900', '65')
-                            +sliderRoom('980', '8 500', '35', 'люкс')
-                            +sliderRoom('856', '7 300', '19')
-                            +sliderRoom('740', '6 000', '44')
-                            +sliderRoom('982', '5 800', '56')
-                            +sliderRoom('678', '5 500', '45')
-                            +sliderRoom('450', '5 300', '39')
-                            +sliderRoom('350', '5 000', '77')
-                            +sliderRoom('666', '5 000', '25')
-                            +sliderRoom('444', '5 000', '15')
-                            +sliderRoom('352', '5 000', '55')
-                        .rightSide__pagination
-                            include components/pagination/pagination.pug
-                            
-                        
+            include components/searchBody/searchBody.pug
             include components/footerBig/footerBigRus.pug
             
             

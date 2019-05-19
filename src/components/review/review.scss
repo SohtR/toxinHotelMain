@@ -1,7 +1,8 @@
 .review{
     display: flex;
     flex-direction: column;
-    max-width: 710px;;
+    max-width: 710px;
+    margin: 0 0 23px 0;
     .review__topBlock,
     .review__bottomBlock{
       display: flex;
