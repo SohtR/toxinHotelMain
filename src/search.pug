@@ -19,6 +19,7 @@ html
     head
         script(src="https://code.jquery.com/jquery-1.12.4.min.js")
         script(src="https://code.jquery.com/ui/1.12.1/jquery-ui.js")
+        script(src="https://d3js.org/d3.v5.min.js")
         meta(charset = 'utf-8')
         meta(name='viewport', content="initial-scale=1.0, width=device-width")
         title Toxin Hotel
@@ -59,10 +60,14 @@ html
                             +sliderRoom('352', '5 000', '55')
                         .rightSide__pagination
                             include components/pagination/pagination.pug
+                            
+                        
             include components/footerBig/footerBigRus.pug
             
             
 //- include ./components/scriptInjection/scriptInjection.pug
+script
+    include ./components/pieChart/pie.js
 script
     include ./components/dropdownGuest/guest.js
 script
