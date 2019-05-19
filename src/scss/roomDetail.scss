@@ -1,4 +1,3 @@
-
 $bgColor: #f4f4f6;
 $dark100: #1F2041;
 $dark50: rgba(31, 32, 65, 0.5);
@@ -46,12 +45,7 @@ main{
   background: $white;
   flex-wrap: wrap;
 }
-.form-elements{
-  width: 100%;
-  margin: 50px 0 0 0;
-  display: flex;
-  z-index: 1;
-}
+
 .flex{
   display: flex;
   margin: 20px 0 0 0;
@@ -59,189 +53,25 @@ main{
     margin: 10px;
   }
 }
-.flex-column{
-  display: flex;
-  flex-direction: column;
-  margin: auto 20px;
-  form{
-    margin: 10px;
-  }
-}
-.email{
-  h3{
-    margin: 20px 0 0 20px;
-  }
-}
 
-.clickMe{
-  h3{
-    margin: 20px;
-  }
-  .btn{
-    margin: 20px;
-  }
-  .btnFill  {
-    padding: 14.8px 19px;
-    margin: 20px;
-  }
-  .btnBorder{
-    padding: 11px 17px;
-  }
-  
-}
-
-.linkPurple{
-  font-family: 'MontserratBold';
-  font-size: 12px;
-  line-height: 15px;
-  text-transform: uppercase;
-  color: $purple;
-}
-.linkPurple:hover,
-.linkPurple:active{
-  color: rgba(31, 32, 65, 0.5);
-}
-.cards{
-  width: 100%;
-}
-
-
-.roomDetailBody{
-  width: 100%;
-  background: $white;
-  h2{
-    margin: 0;
-    letter-spacing: -0.5px;
-  }
-}
-
-.roomDetailBody__wrapper{
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.roomDetailBody__images{
-  width: 1440px;
-  height: 485px;
-  margin: 0 auto 70px auto;
-  display: flex;
-
-}
-.roomDetailBody__bigImg{
-  background: url(../img/roomDetailBig.jpg) no-repeat center;
-  width: 60%;
-  background-size: cover;
-}
-.roomDetailBody__smallImg{
-  width: 40%;
-  display: flex;
-  flex-direction: column;
-}
-.roomDetailBody__topImg{
-  background: url(../img/roomDetailSmall-1.jpg) no-repeat center;
-  max-width: 100%;
-  height: 50%;
-  background-size: cover;
-}
-.roomDetailBody__bottomImg{
-  background: url(../img/roomDetailSmall-2.jpg) no-repeat center;
-  width: 100%;
-  max-width: 100%;
-  height: 50%;
-  background-size: cover;
-}
-.roomDetailBody__content{
-  margin: 0 auto;
-  width: 100%;
-  display: flex;
-}
-.roomDetailBody__leftSide{
-  width: 68%;
-}
-.roomDetailBody__top{
-  display: flex;
-}
-.roomDetailBody__pieChart{
-  margin: 0 0 0 65px;
-  h2{
-    margin: 0 0 21px 0;
-  }
-}
-.roomDetailBody__reviews{
-  margin: 13px 0 0 0;
-}
-.roomDetailBody__reviewsHeadline{
-  display: flex;
-  justify-content: space-between;
-  h2{
-    margin: 0 0 20px 0;
-  }
-  p{
-    margin: 5px 69px 0 0;
-  }
-}
-.roomDetailBody__lists{
-  display: flex;
-  padding: 10px 0 0 0px;
-}
-.roomDetailBody__bullet{
-  width: 46.3%;
-  h2{
-    margin: 0 0 17px 20px;
-
-  }
-}
-.roomDetailBody__cancel{
-  width: 53.7%;
-  h2{
-    margin: 0 0 17px 0;
-  }
-}
-.roomDetailBody__cancelText{
-  font-family: 'Montserrat';
-  font-size: 14px;
-  line-height: 24px;
-  color: rgba(31, 32, 65, 0.75);
-  width: 78%;
-}
-@import '../components/searchBody/searchBody.scss';
+@import '../components/roomDetailBody/roomDetailBody.scss';
 @import '../components/pieChart/pieChart.scss';
-@import '../components/landingBody/landingBody.scss';
-@import '../components/header/header.scss';
 @import '../components/headerButtons/headerButtons.scss';
 @import '../components/footerBig/footerBig.scss';
-@import '../components/footerSmall/footerSmall.scss';
-@import '../components/dataDDFilter/dataDDFilter.scss';
-@import "../components/expendCheckBox/expendCheckBox.scss";
 @import '../components/roomFeature/roomFeature.scss';
-@import '../components/checkBoxes/checkBoxes.scss';
-@import '../components/radioButton/radioButton.scss';
 @import '../components/likeButton/likeButton.scss';
-@import '../components/rangeSlider/rangeSlider.scss';
-@import '../components/richCheckBox/richCheckBox.scss';
 @import '../components/bulletList/bulletList.scss';
 @import '../components/review/review.scss';
-@import '../components/pagination/pagination.scss';
 @import '../components/cardSearchRoom/card.scss';
-@import '../components/cardSearchRoom/cardSearchRoom.scss';
-@import '../components/cardRegister/cardRegister.scss';
-@import '../components/cardLogin/cardLogin.scss';
 @import '../components/cardRoomDetail/cardRoomDetail.scss';
 @import 'fontFace';
 @import '../components/dataDropdown/datepicker.min.scss';
-@import '../components/dropdownRoom/numbercategoryselector.scss';
 @import '../components/dropdownGuest/numbercategoryselectorGuest.scss';
-@import '../components/dropdownGuest2/numbercategoryselectorGuest2.scss';
-@import '../components/cardSliderRoom/flexslider.scss';
 @import '../components/rateButton/rateButton.scss';
 @import '../components/btnBorder/btnBorder.scss';
 @import '../components/dataDropdown/dataDropdown.scss';
 @import '../components/cardSliderRoom/cardSliderRoom.scss';
 @import '../components/btnFill/btnFill.scss';
 @import '../components/btnLong/btnLong.scss';
-@import '../components/colorsTypes/colorsTypes.scss';
 @import '../components/emailSubscribe/emailSubscribe.scss';
 @import '../components/textField/textField.scss';
-@import '../components/toggleButton/toggleButton.scss';

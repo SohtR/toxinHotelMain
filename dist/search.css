@@ -2538,6 +2538,8 @@ html[xmlns] .flexslider .slides {
 .roomSlider {
   padding: 0;
   margin: 21px 0 0 0; }
+  .roomSlider a {
+    display: block; }
   .roomSlider .roomSlider__priceHeadline {
     margin: 20px 0 0 20px;
     justify-content: space-between; }
