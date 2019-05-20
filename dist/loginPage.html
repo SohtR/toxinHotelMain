@@ -7,7 +7,7 @@
     <meta name="viewport" content="initial-scale=1.0, width=device-width">
     <title>Toxin Hotel</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="index.css" rel="stylesheet"><script type="text/javascript" src="index.js"></script></head>
+  <link href="loginPage.css" rel="stylesheet"><script type="text/javascript" src="loginPage.js"></script></head>
   <body>
     <main>
       <div class="headerButtons">
@@ -27,36 +27,18 @@
           </div>
         </div>
       </div>
-      <div class="landingBody">
-        <div class="landingBody__wrapper">
-          <div class="landingBody__bg">
-            <div class="card searchRoom">
-              <h1>Найдем номера под ваши пожелания</h1>
+      <div class="loginPageBody">
+        <div class="loginPageBody__wrapper">
+          <div class="loginPageBody__bg">
+            <div class="card loginAccount">
+              <h1>Войти</h1>
+              <label for="loginEmail"> </label>
+              <input class="textfield" type="email" name="loginEmail" placeholder="Email" id="loginEmail">
+              <label for="loginPass"> </label>
+              <input class="textfield" type="password" name="loginPass" placeholder="Пароль" id="loginPass"><a class="btn btnLong">Войти</a>
               <div class="flex">
-<div class="searchRoom__arrival">
-  <h3>пРиБыТие</h3>
-  <div class="dataDropdown">
-    <label for="start"> </label>
-    <input class="datepicker-here datepickers" id="start" type="text" placeholder="ДД.ММ.ГГГГ" data-clear-Button="true" data-apply-Button="true">
-  </div>
-</div>
-<div class="searchRoom__departure">
-  <h3>выезд</h3>
-  <div class="dataDropdown">
-    <label for="end"> </label>
-    <input class="datepicker-here datepickers" id="end" type="text" placeholder="ДД.ММ.ГГГГ" data-clear-Button="true" data-apply-Button="true">
-  </div>
-</div>
+                <p class="haveAccount">Нет аккаунта на Toxin?</p><a class="btn btnBorder">создать</a>
               </div>
-              <div class="dropdownGuest">
-                <h3>гости</h3>
-<label for="dropdownGuest"> 
-  <input id="dropdownGuest" name="guest" type="text" readonly placeholder="Сколько гостей">
-</label>
-              </div><a class="btn btnLong" href="./search.html">подобрать номер</a>
-            </div>
-            <div class="landingBody__bottomText">
-              <p>Лучшие номера для вашей работы, отдыха и просто вдохновения</p>
             </div>
           </div>
         </div>

@@ -11,6 +11,8 @@ module.exports = {
     index: './src/index.js',
     search: './src/search.js',
     roomDetail: './src/roomDetail.js',
+    loginPage: './src/loginPage.js',
+    regPage: './src/regPage.js',
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -100,6 +102,18 @@ module.exports = {
       template: './src/roomDetail.pug',
       filename: 'roomDetail.html',
       chunks: ['roomDetail']
+    }),
+    new HtmlWebpackPlugin({
+      inject: 'head',
+      template: './src/loginPage.pug',
+      filename: 'loginPage.html',
+      chunks: ['loginPage']
+    }),
+    new HtmlWebpackPlugin({
+      inject: 'head',
+      template: './src/regPage.pug',
+      filename: 'regPage.html',
+      chunks: ['regPage']
     })
     // new webpack.ProvidePlugin({
     //   $: "./src/js/jquery-1.12.4.min.js",

@@ -84,117 +84,19 @@ main {
 .linkPurple:active {
   color: rgba(31, 32, 65, 0.5); }
 
-.cards {
+.loginPageBody {
   width: 100%; }
 
-.searchBody {
+.loginPageBody__wrapper {
+  max-width: 1440px;
+  margin: 0 auto; }
+
+.loginPageBody__bg {
   display: flex;
-  width: 100%; }
-
-.searchBody__leftSide {
-  width: 27.58%;
-  padding: 30px 0 0 0; }
-  .searchBody__leftSide h3 {
-    margin: 0 0 5px 0; }
-  .searchBody__leftSide .filter {
-    margin: 0 0 20px 0; }
-  .searchBody__leftSide #dropdownGuest {
-    width: 266px; }
-  .searchBody__leftSide .rangeSlider {
-    margin: 5px 0 0 0; }
-  .searchBody__leftSide .leftSide__rangeExplain {
-    font-size: 12px;
-    line-height: 14px;
-    color: rgba(31, 32, 65, 0.5);
-    margin: 14px 0 30px 0; }
-  .searchBody__leftSide .leftSide__richCheckBox {
-    margin: 47px 0 0 0; }
-  .searchBody__leftSide .leftSide__roomFeatures {
-    margin: 62px 0 5px 0; }
-  .searchBody__leftSide ul.exCheckList li:first-child {
-    margin: 19px 0 10px 0; }
-
-.searchBody__rightSide {
-  width: 72.42%;
-  padding: 14px 0 0 5px;
-  box-sizing: border-box; }
-  .searchBody__rightSide h1 {
-    font-family: 'MontserratBold', sans-serif;
-    font-size: 24px;
-    line-height: 30px;
-    color: #1F2041;
-    letter-spacing: -0.5px;
-    margin: 16px 0 0 0; }
-  .searchBody__rightSide .rightSide__searchResult {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; }
-  .searchBody__rightSide .rightSide__pagination {
-    display: flex;
-    justify-content: center;
-    margin: 44px 14px 70px 0; }
-
-.pieChart {
-  display: flex;
-  width: 311px;
-  justify-content: space-between; }
-
-.pieChart__legend {
-  margin: 26px 0 0 0; }
-  .pieChart__legend .pieChart__Ellips {
-    font-family: 'Montserrat';
-    font-size: 14px;
-    line-height: 24px;
-    color: rgba(31, 32, 65, 0.75);
-    position: relative; }
-  .pieChart__legend .pieChart__Ellips::before {
-    content: '';
-    position: absolute;
-    z-index: 1;
-    width: 10px;
-    height: 10px;
-    top: 7px;
-    left: -16px;
-    border-radius: 50%;
-    background: linear-gradient(to bottom, #BC9CFF, #8BA4F9); }
-  .pieChart__legend .pieChart__Ellips-orange::before {
-    background: linear-gradient(180deg, #FFE39C 0%, #FFBA9C 100%); }
-  .pieChart__legend .pieChart__Ellips-green::before {
-    background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%); }
-  .pieChart__legend .pieChart__Ellips-black::before {
-    background: linear-gradient(180deg, #919191 0%, #3D4975 100%); }
-
-.graph-container {
-  display: inline-block;
-  position: relative; }
-
-.tooltip {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: flex;
-  flex-direction: column;
   justify-content: center;
-  pointer-events: none;
-  width: 100%; }
-  .tooltip p {
-    text-align: center; }
-  .tooltip .amount {
-    font-size: 24px;
-    font-weight: 300;
-    font-family: 'QuicksandBold';
-    line-height: 30px;
-    color: #BC9CFF;
-    margin: -9px 0 -1px 3px; }
-  .tooltip .item {
-    font-weight: 300;
-    font-family: 'MontserratBold';
-    font-size: 12px;
-    line-height: 15px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #BC9CFF; }
+  background: url(./img/loginPageBg.jpg) no-repeat center bottom;
+  background-size: cover;
+  padding: 161px 0 162px 0; }
 
 .landingBody {
   width: 100%;
@@ -2757,7 +2659,4 @@ html[xmlns] .flexslider .slides {
 .toggleButton input[type="checkbox"]:checked + .toggle:before {
   transform: scale(1);
   transition: all .4s ease; }
-
-div.guest.parent {
-  min-width: 266px; }
 
