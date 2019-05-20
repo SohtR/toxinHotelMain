@@ -22,7 +22,7 @@
                 <li><a href="#">Соглашения</a></li>
               </ul>
             </nav>
-            <div class="headerButtons__buttons"><a class="btn btnBorder" href="./loginPage.html">войти</a><a class="btn btnFill">зарегистрироваться</a>
+            <div class="headerButtons__buttons"><a class="btn btnBorder" href="./loginPage.html">войти</a><a class="btn btnFill" href="./regPage.html">зарегистрироваться</a>
             </div>
           </div>
         </div>
@@ -37,7 +37,7 @@
               <label for="loginPass"> </label>
               <input class="textfield" type="password" name="loginPass" placeholder="Пароль" id="loginPass"><a class="btn btnLong">Войти</a>
               <div class="flex">
-                <p class="haveAccount">Нет аккаунта на Toxin?</p><a class="btn btnBorder">создать</a>
+                <p class="haveAccount">Нет аккаунта на Toxin?</p><a class="btn btnBorder" href="./regPage.html">создать</a>
               </div>
             </div>
           </div>
@@ -95,46 +95,3 @@
     </main>
   </body>
 </html>
-<script>var now = new Date();
-var endDate = new Date(now.getTime() + 365*24*60*60*1000)
-var $start = $('#start'),
-    $end = $('#end');
-var $datepickers = $('.datepickers');
-
-$datepickers.datepicker({
-    language: 'ru',
-    // offset: ,
-    
-    minDate: now,
-    maxDate: endDate,
-    multipleDatesSeparator: "-",
-    range: true,
-      onSelect: function (fd, date) {
-        $end.data('datepicker')
-                .update('selectedDates', $start.data('datepicker').selectedDates);
-        var start = fd.split('-')[0]
-        var end = fd.split('-')[1];
-        if (end) {
-          $start.val(start);
-          $end.val(end);
-        } else {
-          $end.val('')
-        }
-        console.log($start.data('datepicker'));
-    }
-})
-</script>
-<script>$("input[name='guest']").guest({
-    categoryNames: ["Взрослые", "Дети", "Младенцы"],
-    categoryValues: false,
-    minValue: 0,
-    maxValue: 10,
-    closeOnOutsideClick: false,
-    showText: true,
-    delimiter: ", ",
-    align: "left",
-    fade: true,
-    useDisplay: false,
-    showZero: false,
-});
-</script>

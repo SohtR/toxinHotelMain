@@ -44,12 +44,7 @@ main{
   background: $white;
   flex-wrap: wrap;
 }
-.form-elements{
-  width: 100%;
-  margin: 50px 0 0 0;
-  display: flex;
-  z-index: 1;
-}
+
 .flex{
   display: flex;
   margin: 20px 0 0 0;
@@ -57,98 +52,33 @@ main{
     margin: 10px;
   }
 }
-.flex-column{
-  display: flex;
-  flex-direction: column;
-  margin: auto 20px;
-  form{
-    margin: 10px;
-  }
-}
-.email{
-  h3{
-    margin: 20px 0 0 20px;
-  }
-}
 
-.clickMe{
-  h3{
-    margin: 20px;
-  }
-  .btn{
-    margin: 20px;
-  }
-  .btnFill  {
-    padding: 14.8px 19px;
-    margin: 20px;
-  }
-  .btnBorder{
-    padding: 11px 17px;
-  }
-  
-}
 
-.linkPurple{
-  font-family: 'MontserratBold';
-  font-size: 12px;
-  line-height: 15px;
-  text-transform: uppercase;
-  color: $purple;
-}
-.linkPurple:hover,
-.linkPurple:active{
-  color: rgba(31, 32, 65, 0.5);
-}
 
-.loginPageBody{
+.regPageBody{
   width: 100%;
 }
-.loginPageBody__wrapper{
+.regPageBody__wrapper{
   max-width: 1440px;
   margin: 0 auto;
   
 }
-.loginPageBody__bg{
+.regPageBody__bg{
   display: flex;
   justify-content: center;
   background: url(../img/loginPageBg.jpg) no-repeat center bottom;
   background-size: cover;
-  padding: 161px 0 162px 0;
+  padding: 30px 0 24px 0;
 }
-@import '../components/landingBody/landingBody.scss';
-@import '../components/header/header.scss';
 @import '../components/headerButtons/headerButtons.scss';
 @import '../components/footerBig/footerBig.scss';
-@import '../components/footerSmall/footerSmall.scss';
-@import '../components/dataDDFilter/dataDDFilter.scss';
-@import "../components/expendCheckBox/expendCheckBox.scss";
-@import '../components/roomFeature/roomFeature.scss';
-@import '../components/checkBoxes/checkBoxes.scss';
 @import '../components/radioButton/radioButton.scss';
-@import '../components/likeButton/likeButton.scss';
-@import '../components/rangeSlider/rangeSlider.scss';
-@import '../components/richCheckBox/richCheckBox.scss';
-@import '../components/bulletList/bulletList.scss';
-@import '../components/review/review.scss';
-@import '../components/pagination/pagination.scss';
 @import '../components/cardSearchRoom/card.scss';
-@import '../components/cardSearchRoom/cardSearchRoom.scss';
 @import '../components/cardRegister/cardRegister.scss';
-@import '../components/cardLogin/cardLogin.scss';
-@import '../components/cardRoomDetail/cardRoomDetail.scss';
 @import 'fontFace';
-@import '../components/dataDropdown/datepicker.min.scss';
-@import '../components/dropdownRoom/numbercategoryselector.scss';
-@import '../components/dropdownGuest/numbercategoryselectorGuest.scss';
-@import '../components/dropdownGuest2/numbercategoryselectorGuest2.scss';
-@import '../components/cardSliderRoom/flexslider.scss';
-@import '../components/rateButton/rateButton.scss';
 @import '../components/btnBorder/btnBorder.scss';
-@import '../components/dataDropdown/dataDropdown.scss';
-@import '../components/cardSliderRoom/cardSliderRoom.scss';
 @import '../components/btnFill/btnFill.scss';
 @import '../components/btnLong/btnLong.scss';
-@import '../components/colorsTypes/colorsTypes.scss';
 @import '../components/emailSubscribe/emailSubscribe.scss';
 @import '../components/textField/textField.scss';
 @import '../components/toggleButton/toggleButton.scss';
