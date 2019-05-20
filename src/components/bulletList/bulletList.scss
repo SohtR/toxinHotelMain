@@ -1,25 +1,25 @@
 .bulletList{
     li{
       font-family: 'Montserrat';
-      font-size: 14px;
-      line-height: 24px;
+      font-size: 0.875rem;
+      line-height: 1.5rem;
       color: rgba(31, 32, 65, 0.75);
-      margin: 0 0 10px 8px;
+      margin: 0 0 0.625rem 0.5rem;
       position: relative;
-      padding: 0 0 0 12px;
-      width: 240px;
+      padding: 0 0 0 0.75rem;
+      width: 15rem;
     }
     li:before {
-      width: 10px;
-      height: 10px;
-      border-radius: 10px;
+      width: 0.625rem;
+      height: 0.625rem;
+      border-radius: 0.625rem;
       background: rgba(31, 32, 65, 0.25);
       content: "";
       padding-right: 0px;
       display: inline-block;
-      margin: 0 10px 0 0;
+      margin: 0 0.625rem 0 0;
       position: absolute;
-      left: -9px;
-      top: 7px;
+      left: -0.5625rem;
+      top: 0.4375rem;
      }
   }

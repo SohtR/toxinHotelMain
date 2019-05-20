@@ -1,14 +1,14 @@
 .pieChart{
     display: flex;
-    width: 311px;
+    width: 19.4375rem;
     justify-content: space-between;
 }
 .pieChart__legend{
-margin: 26px 0 0 0;
+margin: 1.625rem 0 0 0;
 .pieChart__Ellips{
     font-family: 'Montserrat';
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
     color: rgba(31, 32, 65, 0.75);
     position: relative;
 }
@@ -16,10 +16,10 @@ margin: 26px 0 0 0;
     content: '';
     position: absolute;
     z-index: 1;
-    width: 10px;
-    height: 10px;
-    top: 7px;
-    left: -16px;
+    width: 0.625rem;
+    height: 0.625rem;
+    top: 0.4375rem;
+    left: -1rem;
     border-radius: 50%;
     background: linear-gradient(to bottom, $purple, #8BA4F9);
 }
@@ -52,19 +52,19 @@ width: 100%;
         text-align: center;
     }
     .amount {
-        font-size: 24px;
+        font-size: 1.5rem;
         font-weight: 300;
         font-family: 'QuicksandBold';
-        line-height: 30px;
+        line-height: 1.875rem;
         color: #BC9CFF;
-        margin: -9px 0 -1px 3px;
+        margin: -0.5625rem 0 -0.0625rem 0.1875rem;
     }
 
     .item {
         font-weight: 300;
         font-family: 'MontserratBold';
-        font-size: 12px;
-        line-height: 15px;
+        font-size: 0.75rem;
+        line-height: 0.9375rem;
         text-align: center;
         text-transform: uppercase;
         color: #BC9CFF;

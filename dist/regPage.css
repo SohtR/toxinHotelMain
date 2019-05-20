@@ -39,15 +39,15 @@ main {
 
 .flex {
   display: flex;
-  margin: 20px 0 0 0; }
+  margin: 1.25rem 0 0 0; }
   .flex form {
-    margin: 10px; }
+    margin: 0.625rem; }
 
 .regPageBody {
   width: 100%; }
 
 .regPageBody__wrapper {
-  max-width: 1440px;
+  max-width: 90rem;
   margin: 0 auto; }
 
 .regPageBody__bg {
@@ -55,23 +55,23 @@ main {
   justify-content: center;
   background: url(./img/loginPageBg.jpg) no-repeat center bottom;
   background-size: cover;
-  padding: 30px 0 24px 0; }
+  padding: 1.875rem 0 1.5rem 0; }
 
 .headerButtons {
   background: #fff;
-  box-shadow: 0rem 0.625rem 1.25rem rgba(31, 32, 65, 0.05);
-  height: 70px;
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  height: 4.375rem;
   width: 100%;
-  margin: 0rem 0 0 0;
+  margin: 0px 0 0 0;
   display: flex;
-  padding: 3px 0 0 0;
+  padding: 0.1875rem 0 0 0;
   box-sizing: border-box; }
   .headerButtons .wrapper {
-    padding: 12px 0 0 0; }
+    padding: 0.75rem 0 0 0; }
 
 .wrapper {
   margin: 0 auto;
-  width: 1159px;
+  width: 72.4375rem;
   display: flex;
   justify-content: space-between; }
   .wrapper .header__logo {
@@ -82,21 +82,21 @@ main {
 
 .headerButtons__main {
   margin: 0 auto;
-  min-width: 1159px;
+  min-width: 72.4375rem;
   display: flex;
   justify-content: space-between;
-  padding: 11px 2px 0 0; }
+  padding: 0.6875rem 0.125rem 0 0; }
 
 .header__nav-but-wrap {
   display: flex; }
 
 .headerButtons__mainMenu {
   list-style: none;
-  margin: 11.2px 48px 0 0px;
+  margin: 0.7rem 3rem 0 0rem;
   padding: 0; }
   .headerButtons__mainMenu li {
     display: inline-block;
-    margin: 0 0 0 23px;
+    margin: 0 0 0 1.4375rem;
     position: relative; }
   .headerButtons__mainMenu li a {
     font-size: 0.875rem;
@@ -133,7 +133,7 @@ main {
     margin: 0 0 0 1.3125rem; }
 
 .btn {
-  height: 34px;
+  height: 2.125rem;
   box-sizing: border-box;
   cursor: pointer;
   font-family: 'MontserratBold';
@@ -142,17 +142,48 @@ main {
   color: #fff;
   text-align: center;
   background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-  border-radius: 22px; }
+  border-radius: 1.375rem; }
+
+@media screen and (max-width: 1180px) {
+  .wrapper {
+    margin: 0 auto;
+    width: auto;
+    display: flex;
+    justify-content: space-between; }
+    .wrapper .header__logo {
+      display: inline; }
+      .wrapper .header__logo img {
+        max-width: 100%;
+        max-height: 100%; } }
+
+@media screen and (max-width: 1180px) {
+  .headerButtons {
+    padding: 0.1875rem 15px 0 15px; } }
+
+@media screen and (max-width: 850px) {
+  .headerButtons {
+    padding: 0.1875rem 0 24px 0;
+    height: 8.875rem; }
+  .wrapper {
+    flex-direction: column;
+    align-items: center; }
+    .wrapper .header__logo {
+      align-self: center; }
+  .header__nav-but-wrap {
+    flex-direction: column; }
+  .headerButtons__buttons {
+    padding: 1rem 0 0 0;
+    align-self: center; } }
 
 .footer-big {
   width: 100%;
   background: #fff;
-  box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1);
-  margin: 0rem 0 0 0;
-  padding: 6.25rem 0 0px 0px;
+  box-shadow: 0rem 0.0625rem 0rem rgba(31, 32, 65, 0.1);
+  margin: 0px 0 0 0;
+  padding: 100px 0 0rem 0rem;
   display: flex;
   position: relative;
-  border: 1px solid #f4f4f6; }
+  border: 0.0625rem solid #f4f4f6; }
 
 .footer-big > .wrapper {
   flex-wrap: wrap; }
@@ -170,26 +201,27 @@ main {
     font-size: 0.875rem;
     line-height: 1.5rem;
     color: rgba(31, 32, 65, 0.75);
-    letter-spacing: -0.0063rem;
-    margin: 12px 0 0 0; }
+    letter-spacing: -0.1008px;
+    margin: 0.75rem 0 0 0; }
 
 .footer-big__menus {
   display: flex;
   width: 100%;
-  justify-content: space-around; }
+  justify-content: space-around;
+  flex-wrap: wrap; }
 
 .footer-big__list {
-  margin: 0 0px 0 0; }
+  margin: 0 0rem 0 0; }
   .footer-big__list ul {
     margin: 0.625rem 0 0 0; }
   .footer-big__list li {
     line-height: 2.375rem; }
 
 .footer-big__support {
-  margin: 0 21px 0 33px; }
+  margin: 0 1.3125rem 0 2.0625rem; }
 
 .footer-big__nav {
-  margin: 0 0px 0 9px; }
+  margin: 0 0rem 0 0.5625rem; }
 
 .footer-big__headline {
   font-family: 'MontserratBold';
@@ -201,7 +233,7 @@ main {
   margin: 0.28rem 0 0 0; }
 
 .footer-big__subscribe p {
-  margin: 20px 0 0 0;
+  margin: 1.25rem 0 0 0;
   line-height: 1.375rem; }
 
 .footer-big__subscribe h3 {
@@ -211,9 +243,9 @@ main {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  height: 70px; }
+  height: 4.375rem; }
   .footer-big__copyright p {
-    padding: 27px 0 0 0;
+    padding: 1.6875rem 0 0 0;
     letter-spacing: -0.0063rem;
     font-size: 0.875rem;
     line-height: 1.0625rem;
@@ -224,79 +256,92 @@ main {
   content: '';
   display: block;
   position: absolute;
-  height: 2px;
+  height: 0.125rem;
   background: #f4f4f6;
-  bottom: 70px; }
+  bottom: 4.375rem; }
 
 .footer-big__social {
-  padding: 25px 0 0 0; }
+  padding: 1.5625rem 0 0 0; }
 
 .footer-big__twitter,
 .footer-big__facebook,
 .footer-big__instagram {
   display: inline-block;
-  width: 22px;
-  height: 22px;
+  width: 1.375rem;
+  height: 1.375rem;
   background: url(./img/css_sprites.png) no-repeat;
-  margin: 0 22px 0 0; }
+  margin: 0 1.375rem 0 0; }
 
 .footer-big__twitter {
-  background: url(./img/css_sprites.png) no-repeat -10px -52px; }
+  background: url(./img/css_sprites.png) no-repeat -0.625rem -3.25rem; }
 
 .footer-big__facebook {
-  background: url(./img/css_sprites.png) no-repeat -10px -10px; }
+  background: url(./img/css_sprites.png) no-repeat -0.625rem -0.625rem; }
 
 .footer-big__instagram {
-  background: url(./img/css_sprites.png) no-repeat -52px -10px;
+  background: url(./img/css_sprites.png) no-repeat -3.25rem -0.625rem;
   margin: 0; }
+
+@media screen and (max-width: 1180px) {
+  .footer-big > .wrapper {
+    padding: 20px 20px 10px 20px; } }
+
+@media screen and (max-width: 850px) {
+  .footer-big {
+    padding: 0; }
+  .footer-big__main {
+    flex-wrap: wrap; }
+  .footer-big__menus {
+    order: 9;
+    margin: 26px 0 0 0; } }
 
 .radioButton[type="radio"]:checked, .radioButton[type="radio"]:not(:checked) {
   position: absolute;
-  left: -9999px; }
+  left: -624.9375rem; }
 
 .radioButton[type="radio"]:checked + label,
 .radioButton[type="radio"]:not(:checked) + label {
   position: relative;
-  padding-left: 28px;
+  padding-left: 1.75rem;
   cursor: pointer;
-  line-height: 20px;
+  line-height: 1.25rem;
   display: inline-block;
   color: rgba(31, 32, 65, 0.75);
-  margin: 0 20px 0 0; }
+  margin: 0 1.25rem 0 0; }
 
 .radioButton[type="radio"]:not(:checked) + label:before {
   content: '';
   position: absolute;
   left: 0;
   top: 0;
-  width: 20px;
-  height: 20px;
-  border: 1px solid rgba(31, 32, 65, 0.25);
-  border-radius: 10px;
+  width: 1.25rem;
+  height: 1.25rem;
+  border: 0.0625rem solid rgba(31, 32, 65, 0.25);
+  border-radius: 0.625rem;
   background: #fff;
   box-sizing: border-box; }
 
 .radioButton[type="radio"]:checked + label:before {
-  border: 1px solid #BC9CFF;
+  border: 0.0625rem solid #BC9CFF;
   content: '';
   position: absolute;
   left: 0;
   top: 0;
-  width: 20px;
-  height: 20px;
-  border-radius: 10px;
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 0.625rem;
   background: #fff;
   box-sizing: border-box; }
 
 .radioButton[type="radio"]:checked + label:after,
 .radioButton[type="radio"]:not(:checked) + label:after {
   content: '';
-  width: 12px;
-  height: 12px;
+  width: 0.75rem;
+  height: 0.75rem;
   background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
   position: absolute;
-  top: 4px;
-  left: 4px;
+  top: 0.25rem;
+  left: 0.25rem;
   border-radius: 100%;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease; }
@@ -312,56 +357,56 @@ main {
   transform: scale(1); }
 
 .card {
-  width: 380px;
-  padding: 39px 30px 30px 30px;
+  width: 23.75rem;
+  padding: 2.4375rem 1.875rem 1.875rem 1.875rem;
   background: #fff;
-  border: 1px solid rgba(0, 0, 0, 0.12);
+  border: 0.0625rem solid rgba(0, 0, 0, 0.12);
   box-sizing: border-box;
-  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
+  box-shadow: 0rem 0rem 1.5625rem rgba(0, 0, 0, 0.2);
+  border-radius: 0.25rem;
   z-index: 1; }
   .card h1 {
     font-family: 'MontserratBold';
-    font-size: 24px;
-    line-height: 30px;
+    font-size: 1.5rem;
+    line-height: 1.875rem;
     color: #1F2041;
-    margin: 0 0 20px 0;
-    letter-spacing: -0.4px; }
+    margin: 0 0 1.25rem 0;
+    letter-spacing: -0.025rem; }
   .card .btnBorder {
-    margin: 2px 0 0 36px;
-    width: 96px;
-    height: 40px;
+    margin: 0.125rem 0 0 2.25rem;
+    width: 6rem;
+    height: 2.5rem;
     box-sizing: border-box;
     display: inline-block;
-    line-height: 26px; }
+    line-height: 1.625rem; }
   .card .haveAccount {
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 0.875rem;
+    line-height: 1.125rem;
     color: #000; }
 
 .registerAccount h1 {
-  letter-spacing: -0.6px; }
+  letter-spacing: -0.0375rem; }
 
 .registerAccount input {
-  margin: 0 0 10px 0; }
+  margin: 0 0 0.625rem 0; }
 
 .registerAccount input[type="password"] {
-  margin: 0 0 8px 0; }
+  margin: 0 0 0.5rem 0; }
 
 .registerAccount .registerAccount__birthday {
-  margin: 25px 0 5px 0; }
+  margin: 1.5625rem 0 0.3125rem 0; }
 
 .registerAccount .registerAccount__enterData {
-  margin: 10px 0 5px 0; }
+  margin: 0.625rem 0 0.3125rem 0; }
 
 .registerAccount .flex {
-  margin: 0px 0 3px 0; }
+  margin: 0rem 0 0.1875rem 0; }
   .registerAccount .flex p {
-    margin: 0 0 20px 10px;
-    line-height: 22px; }
+    margin: 0 0 1.25rem 0.625rem;
+    line-height: 1.375rem; }
 
 .registerAccount .btnLong {
-  margin: 0 0 30px 0; }
+  margin: 0 0 1.875rem 0; }
 
 @font-face {
   font-family: 'Montserrat';
@@ -405,7 +450,7 @@ main {
   right: -0.125rem;
   bottom: -0.125rem;
   left: -0.125rem;
-  border-radius: 22px;
+  border-radius: 1.375rem;
   background: linear-gradient(to bottom, #BC9CFF, #8BA4F9); }
 
 .btnBorder:hover::before,
@@ -420,28 +465,28 @@ main {
   opacity: 0.5; }
 
 .btnLong {
-  width: 320px;
-  height: 44px;
+  width: 20rem;
+  height: 2.75rem;
   display: inline-block;
   text-align: center;
   background: url(./img/arrow_forward.png) no-repeat right 13px center, linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-  padding: 15px 0 0 0; }
+  padding: 0.9375rem 0 0 0; }
   .btnLong:hover, .btnLong:active {
     opacity: 0.5; }
 
 .formEmail {
-  width: 16.25rem;
-  height: 2.75rem;
-  border: 1px solid rgba(31, 32, 65, 0.25);
+  width: 260px;
+  height: 44px;
+  border: 0.0625rem solid rgba(31, 32, 65, 0.25);
   box-sizing: border-box;
-  border-radius: 4px;
+  border-radius: 0.25rem;
   background: #fff;
-  margin: 1.5625rem 0 0 0; }
+  margin: 25px 0 0 0; }
   .formEmail input[type="email"] {
     border: none;
-    padding: 0px  0 0.25rem 0.9375rem;
-    font-size: 0.875rem;
-    line-height: 1.5rem;
+    padding: 0rem  0 4px 15px;
+    font-size: 14px;
+    line-height: 24px;
     color: rgba(31, 32, 65, 0.75);
     outline: none;
     vertical-align: middle;
@@ -459,66 +504,66 @@ main {
     cursor: pointer; }
 
 .textfield {
-  width: 320px;
-  height: 44px;
+  width: 20rem;
+  height: 2.75rem;
   background: #fff;
-  border: 1px solid rgba(31, 32, 65, 0.25);
+  border: 0.0625rem solid rgba(31, 32, 65, 0.25);
   box-sizing: border-box;
-  border-radius: 4px;
+  border-radius: 0.25rem;
   font-family: 'Montserrat';
-  font-size: 14px;
-  line-height: 18px;
+  font-size: 0.875rem;
+  line-height: 1.125rem;
   color: rgba(31, 32, 65, 0.25);
-  padding: 0 0 0 15px; }
+  padding: 0 0 0 0.9375rem; }
 
 .textfield:hover,
 .textfield:focus {
-  border: 1px solid rgba(31, 32, 65, 0.5);
+  border: 0.0625rem solid rgba(31, 32, 65, 0.5);
   color: rgba(31, 32, 65, 0.75); }
 
 .textfield:focus::placeholder {
   opacity: 0; }
 
 .toggleButton p {
-  margin: 0 0 0 10px; }
+  margin: 0 0 0 0.625rem; }
 
 .toggle {
   position: relative;
   display: block;
-  width: 40px;
-  height: 20px;
+  width: 2.5rem;
+  height: 1.25rem;
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
   transform: translate3d(0, 0, 0); }
   .toggle:before {
     content: "";
     position: relative;
-    top: 0px;
-    left: 0px;
-    width: 37px;
-    height: 20px;
+    top: 0rem;
+    left: 0rem;
+    width: 2.3125rem;
+    height: 1.25rem;
     display: block;
     background: #fff;
-    border-radius: 10px;
+    border-radius: 0.625rem;
     transition: background .2s ease;
-    border: 1px solid rgba(31, 32, 65, 0.25); }
+    border: 0.0625rem solid rgba(31, 32, 65, 0.25); }
   .toggle span {
     position: absolute;
-    top: 5px;
-    left: 5px;
-    width: 12px;
-    height: 12px;
+    top: 0.3125rem;
+    left: 0.3125rem;
+    width: 0.75rem;
+    height: 0.75rem;
     display: block;
     background: rgba(31, 32, 65, 0.25);
-    border-radius: 10px;
+    border-radius: 0.625rem;
     transition: all .2s ease; }
     .toggle span:before {
       content: "";
       position: absolute;
       display: block;
-      margin: -18px;
-      width: 56px;
-      height: 56px;
+      margin: -1.125rem;
+      width: 3.5rem;
+      height: 3.5rem;
       background: rgba(79, 46, 220, 0.5);
       border-radius: 50%;
       transform: scale(0);
@@ -527,11 +572,11 @@ main {
 
 .toggleButton input[type="checkbox"]:checked + .toggle:before {
   background: #fff;
-  border: 1px solid #BC9CFF; }
+  border: 0.0625rem solid #BC9CFF; }
 
 .toggleButton input[type="checkbox"]:checked + .toggle span {
   background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-  transform: translateX(20px);
+  transform: translateX(1.25rem);
   transition: all 0.2s cubic-bezier(0.8, 0.4, 0.3, 1.25), background 0.15s ease; }
 
 .toggleButton input[type="checkbox"]:checked + .toggle:before {

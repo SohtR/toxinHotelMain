@@ -3,7 +3,7 @@
     background: $white;
     h2{
       margin: 0;
-      letter-spacing: -0.5px;
+      letter-spacing: -0.0313rem;
     }
 }
 
@@ -15,9 +15,9 @@ flex-wrap: wrap;
 }
 
 .roomDetailBody__images{
-width: 1440px;
-height: 485px;
-margin: 0 auto 70px auto;
+width: 90rem;
+height: 30.3125rem;
+margin: 0 auto 4.375rem auto;
 display: flex;
 
 }
@@ -56,48 +56,48 @@ width: 68%;
 display: flex;
 }
 .roomDetailBody__pieChart{
-margin: 0 0 0 65px;
+margin: 0 0 0 4.0625rem;
 h2{
-    margin: 0 0 21px 0;
+    margin: 0 0 1.3125rem 0;
 }
 }
 .roomDetailBody__reviews{
-margin: 13px 0 0 0;
+margin: 0.8125rem 0 0 0;
 }
 .roomDetailBody__reviewsHeadline{
 display: flex;
 justify-content: space-between;
 h2{
-    margin: 0 0 20px 0;
+    margin: 0 0 1.25rem 0;
 }
 p{
-    margin: 5px 69px 0 0;
+    margin: 0.3125rem 4.3125rem 0 0;
 }
 }
 .roomDetailBody__lists{
 display: flex;
-padding: 10px 0 0 0px;
+padding: 0.625rem 0 0 0rem;
 }
 .roomDetailBody__bullet{
 width: 46.3%;
 h2{
-    margin: 0 0 17px 20px;
+    margin: 0 0 1.0625rem 1.25rem;
 
 }
 }
 .roomDetailBody__cancel{
 width: 53.7%;
 h2{
-    margin: 0 0 17px 0;
+    margin: 0 0 1.0625rem 0;
 }
 }
 .roomDetailBody__cancelText{
 font-family: 'Montserrat';
-font-size: 14px;
-line-height: 24px;
+font-size: 0.875rem;
+line-height: 1.5rem;
 color: rgba(31, 32, 65, 0.75);
 width: 78%;
 }
 .roomDetailBody__bottom{
-margin: 0 0 62px 0;
+margin: 0 0 3.875rem 0;
 }

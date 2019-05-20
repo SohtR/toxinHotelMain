@@ -47,29 +47,15 @@ main{
 
 .flex{
   display: flex;
-  margin: 20px 0 0 0;
+  margin: 1.25rem 0 0 0;
   form{
-    margin: 10px;
+    margin: 0.625rem;
   }
 }
 
 
 
-.regPageBody{
-  width: 100%;
-}
-.regPageBody__wrapper{
-  max-width: 1440px;
-  margin: 0 auto;
-  
-}
-.regPageBody__bg{
-  display: flex;
-  justify-content: center;
-  background: url(../img/loginPageBg.jpg) no-repeat center bottom;
-  background-size: cover;
-  padding: 30px 0 24px 0;
-}
+@import '../components/regPageBody/regPageBody.scss';
 @import '../components/headerButtons/headerButtons.scss';
 @import '../components/footerBig/footerBig.scss';
 @import '../components/radioButton/radioButton.scss';

@@ -1,15 +1,15 @@
-.loginPageBody{
+.regPageBody{
     width: 100%;
-}
-.loginPageBody__wrapper{
-max-width: 1440px;
-margin: 0 auto;
-
-}
-.loginPageBody__bg{
-display: flex;
-justify-content: center;
-background: url(../img/loginPageBg.jpg) no-repeat center bottom;
-background-size: cover;
-padding: 161px 0 162px 0;
-}
+  }
+  .regPageBody__wrapper{
+    max-width: 90rem;
+    margin: 0 auto;
+    
+  }
+  .regPageBody__bg{
+    display: flex;
+    justify-content: center;
+    background: url(../img/loginPageBg.jpg) no-repeat center bottom;
+    background-size: cover;
+    padding: 1.875rem 0 1.5rem 0;
+  }

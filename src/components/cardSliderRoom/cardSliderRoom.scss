@@ -1,59 +1,59 @@
 .cardSmall{
-    width: 270px;
-    // padding: 40px 30px 30px 30px;
+    width: 16.875rem;
+    // padding: 2.5rem 1.875rem 1.875rem 1.875rem;
     background: $white;
-    // border: 1px solid rgba(0, 0, 0, 0.12);
+    // border: 0.0625rem solid rgba(0, 0, 0, 0.12);
     box-sizing: border-box;
-    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
-    border-radius: 4px;
+    box-shadow: 0rem 0.625rem 1.25rem rgba(31, 32, 65, 0.05);
+    border-radius: 0.25rem;
     z-index: 1;  
   }
   .roomSlider{
       padding: 0;
-      margin: 21px 0 0 0;
+      margin: 1.3125rem 0 0 0;
       a{
         display: block;
       }
       .roomSlider__priceHeadline{
-        margin: 20px 0 0 20px;
+        margin: 1.25rem 0 0 1.25rem;
         justify-content: space-between;
       }
       .roomSlider__price{
-        margin: 3px 10px 0px 0px;
+        margin: 0.1875rem 0.625rem 0rem 0rem;
       }
       .roomSlider__number{
         font-family: 'MontserratBold';
-        font-size: 19px;
-        line-height: 24px;
+        font-size: 1.1875rem;
+        line-height: 1.5rem;
         color: $dark100;
-        letter-spacing: -1px;
+        letter-spacing: -0.0625rem;
       }
       .roomSlider__num{
-        font-size: 14px;
-        line-height: 17px;
-        margin: 0 3px 0 0;
+        font-size: 0.875rem;
+        line-height: 1.0625rem;
+        margin: 0 0.1875rem 0 0;
       }
       .roomSlider__lux{
         font-family: 'MontserratBold';
-        font-size: 12px;
-        line-height: 15px;
+        font-size: 0.75rem;
+        line-height: 0.9375rem;
         text-transform: uppercase;
         color: $purple;
       }
     .roomSlider__rating{
-      margin: 18px 0 15px 0;
+      margin: 1.125rem 0 0.9375rem 0;
       justify-content: space-between;
     }  
     .rating{
-      margin: 0px 0 0 20px;
+      margin: 0rem 0 0 1.25rem;
     }
     .roomSlider__reviewsAmount{
       font-family: 'Montserrat';
-      font-size: 14px;
-      line-height: 18px;
+      font-size: 0.875rem;
+      line-height: 1.125rem;
       text-align: right;
       color: rgba(31, 32, 65, 0.5);
-      margin: 5px auto;
+      margin: 0.3125rem auto;
       b{
         font-family: 'MontserratBold';
       }
