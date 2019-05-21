@@ -763,3 +763,13 @@ span[data-action='apply'] {
     color: $purple;
     margin: 0 11px 0 0;
 }
+@media screen and (max-width: 850px){
+    .datepicker--cell.-selected-.-range-from- {
+        background: url(../img/Rectangle_2.png) no-repeat right, url(../img/Rectangle_1.png) no-repeat;
+        background-size: auto, cover;
+    }
+    .datepicker--cell.-selected-.-range-to- {
+        background: url(../img/Rectangle_2.png) no-repeat left, url(../img/Rectangle_1.png) no-repeat;
+        background-size: auto, cover;
+    }
+}

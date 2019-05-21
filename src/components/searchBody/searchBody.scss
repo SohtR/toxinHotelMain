@@ -57,3 +57,32 @@ box-sizing: border-box;
         margin: 2.75rem 0.875rem 4.375rem 0;
     }
 }
+
+@media screen and (max-width: 1200px){
+    .searchBody__rightSide {
+        width: 64%;
+        padding: 0.875rem 0.9375rem 0 0.3125rem;
+        h1{
+            text-align: center;
+        }
+        .rightSide__searchResult{
+        justify-content: space-around;
+        }
+    }
+    
+    .searchBody__leftSide{
+        margin: 0 auto;
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 850px){
+    .searchBody__rightSide {
+        width: auto;
+    }
+    .searchBody__rightSide .rightSide__pagination {
+        margin: 1.75rem 0.875rem 1.375rem 0;
+    
+    }
+    
+}
