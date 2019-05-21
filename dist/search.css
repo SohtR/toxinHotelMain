@@ -200,6 +200,9 @@ main {
   width: 100%;
   background: #fff; }
 
+.landingBody__wrapper {
+  position: relative; }
+
 .landingBody__bg {
   width: 90rem;
   height: 51.875rem;
@@ -208,18 +211,18 @@ main {
   margin: 0 auto; }
   .landingBody__bg .card {
     margin: 4.8% 0 0 9.6%; }
-  .landingBody__bg .landingBody__bottomText {
-    position: relative; }
-  .landingBody__bg .landingBody__bottomText p {
-    text-align: right;
-    font-family: 'Montserrat';
-    font-size: 0.875rem;
-    line-height: 1.5rem;
-    color: rgba(31, 32, 65, 0.75);
-    position: absolute;
-    width: 18.5625rem;
-    right: 8.3125rem;
-    bottom: -22.75rem; }
+
+.landingBody__bottomText {
+  position: absolute;
+  text-align: right;
+  font-family: 'Montserrat';
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  color: rgba(31, 32, 65, 0.75);
+  position: absolute;
+  width: 18.5625rem;
+  right: 22.8rem;
+  bottom: 21px; }
 
 .landingBody__wrapper {
   width: 100%;
@@ -228,8 +231,49 @@ main {
   flex-wrap: wrap; }
 
 @media screen and (max-width: 1440px) {
-  .landingBody__bg .landingBody__bottomText p {
-    bottom: -16.75rem; } }
+  .landingBody__bg {
+    background: url(./img/landingImg.jpg) no-repeat 0 0; }
+  .landingBody__bottomText {
+    right: 5%; }
+  .landingBody__bg .card {
+    margin: 4.8% 0 26% 9.6%; } }
+
+@media screen and (max-width: 550px) {
+  .landingBody__bg {
+    height: 36.875rem; }
+  .landingBody__bg .card {
+    margin: 4.8% auto;
+    width: 18.75rem;
+    padding: 0.438rem 0.875rem 0.875rem 0.875rem; }
+    .landingBody__bg .card h1 {
+      font-size: 1.1rem;
+      text-align: center; }
+    .landingBody__bg .card .searchRoom .flex {
+      justify-content: center; }
+    .landingBody__bg .card .dataDropdown input {
+      width: 7.375rem;
+      height: 2.75rem;
+      font-size: 0.675rem;
+      color: rgba(31, 32, 65, 0.75);
+      background: #fff url(./img/arrowDown.svg) no-repeat 5.5rem 0.6875rem; }
+    .landingBody__bg .card input[name="guest"] {
+      width: 17rem;
+      font-size: 0.875rem; }
+    .landingBody__bg .card .btnLong {
+      width: 17rem; }
+  .datepicker--content {
+    padding: 5px 7px 0 9px !important; }
+  .datepicker--cell {
+    height: 34px !important; }
+  .datepicker {
+    width: 280px !important;
+    height: 320px !important; }
+  div.guest.parent {
+    min-width: 17rem !important; }
+  .datepicker.-bottom-left-.-from-bottom-.active {
+    left: 26px !important; }
+  .landingBody__bottomText {
+    display: none; } }
 
 .header {
   background: #fff;
@@ -349,7 +393,7 @@ main {
 @media screen and (max-width: 850px) {
   .headerButtons {
     padding: 0.1875rem 0 24px 0;
-    height: 8.875rem; }
+    height: 100%; }
   .wrapper {
     flex-direction: column;
     align-items: center; }
@@ -360,6 +404,10 @@ main {
   .headerButtons__buttons {
     padding: 1rem 0 0 0;
     align-self: center; } }
+
+@media screen and (max-width: 500px) {
+  nav {
+    text-align: center; } }
 
 .footer-big {
   width: 100%;
@@ -479,7 +527,31 @@ main {
     flex-wrap: wrap; }
   .footer-big__menus {
     order: 9;
-    margin: 26px 0 0 0; } }
+    margin: 26px 0 0 0;
+    justify-content: space-between; }
+  .footer-big__subscribe {
+    margin: 26px auto;
+    text-align: center; }
+    .footer-big__subscribe .formEmail {
+      margin: 25px auto 0; }
+  .footer-big__logo {
+    text-align: center;
+    max-width: 100%; } }
+
+@media screen and (max-width: 550px) {
+  .footer-big__menus {
+    justify-content: space-around; }
+  .footer-big > .wrapper {
+    padding: 20px 20px 15px 20px; }
+  .footer-big__copyright {
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 5rem; }
+    .footer-big__copyright p {
+      text-align: center;
+      padding: 2rem 0 0 0; }
+  .footer-big__social {
+    padding: 0.563rem 0 0 0; } }
 
 .footer-small {
   background: #fff;

@@ -150,5 +150,38 @@
     .footer-big__menus{
         order: 9;
         margin: 26px 0 0 0;
+        justify-content: space-between;
+    }
+    .footer-big__subscribe{
+        margin: 26px auto;
+        text-align: center;
+        .formEmail{
+        margin: 25px auto 0;
+        }
+    }
+    .footer-big__logo{
+        text-align: center;
+        max-width: 100%;
     }
 }
+@media screen and (max-width: 550px) {
+    .footer-big__menus{
+        justify-content: space-around;
+    }
+    .footer-big > .wrapper {
+        padding: 20px 20px 15px 20px;
+    }
+    .footer-big__copyright{
+        flex-wrap: wrap;
+        justify-content: center;
+        height: 5rem;
+        p{
+            text-align: center;
+            padding: 2rem 0 0 0;
+        }
+    }
+    .footer-big__social{
+        padding: 0.563rem 0 0 0;
+    }
+}
+

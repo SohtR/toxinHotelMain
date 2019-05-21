@@ -306,7 +306,7 @@ main {
 @media screen and (max-width: 850px) {
   .headerButtons {
     padding: 0.1875rem 0 24px 0;
-    height: 8.875rem; }
+    height: 100%; }
   .wrapper {
     flex-direction: column;
     align-items: center; }
@@ -317,6 +317,10 @@ main {
   .headerButtons__buttons {
     padding: 1rem 0 0 0;
     align-self: center; } }
+
+@media screen and (max-width: 500px) {
+  nav {
+    text-align: center; } }
 
 .footer-big {
   width: 100%;
@@ -436,7 +440,31 @@ main {
     flex-wrap: wrap; }
   .footer-big__menus {
     order: 9;
-    margin: 26px 0 0 0; } }
+    margin: 26px 0 0 0;
+    justify-content: space-between; }
+  .footer-big__subscribe {
+    margin: 26px auto;
+    text-align: center; }
+    .footer-big__subscribe .formEmail {
+      margin: 25px auto 0; }
+  .footer-big__logo {
+    text-align: center;
+    max-width: 100%; } }
+
+@media screen and (max-width: 550px) {
+  .footer-big__menus {
+    justify-content: space-around; }
+  .footer-big > .wrapper {
+    padding: 20px 20px 15px 20px; }
+  .footer-big__copyright {
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 5rem; }
+    .footer-big__copyright p {
+      text-align: center;
+      padding: 2rem 0 0 0; }
+  .footer-big__social {
+    padding: 0.563rem 0 0 0; } }
 
 .roomFeature {
   width: 18.1875rem;
