@@ -11,3 +11,9 @@
       opacity: 0.5;
     }
 }
+
+@media screen and (max-width: 550px) {
+    .btnLong {
+      width: 17rem;
+    }
+}

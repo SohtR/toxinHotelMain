@@ -13,3 +13,16 @@ background: url(../img/loginPageBg.jpg) no-repeat center bottom;
 background-size: cover;
 padding: 10.0625rem 0 10.125rem 0;
 }
+
+@media screen and (max-width: 500px) {
+    .loginPageBody__bg{
+        .card.loginAccount{
+            width: 18.75rem;
+            padding: 0.438rem 0.875rem 0.875rem 0.875rem;
+            input {
+                width: 17rem;
+                font-size: 0.875rem;
+            }
+        }
+    }
+}

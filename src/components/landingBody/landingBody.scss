@@ -3,11 +3,11 @@
     background: $white;
 }
 .landingBody__wrapper{
-    position: relative;
+    // position: relative;
 }
 .landingBody__bg{
 width: 90rem;
-height: 51.875rem;
+height: 51.75rem;
 background: url(../img/landingImg.jpg) no-repeat 0.125rem -4.375rem;
 background-size: cover; 
 margin: 0 auto;
@@ -29,7 +29,7 @@ margin: 0 auto;
     position: absolute;
     width: 18.5625rem;
     right: 22.8rem;
-    bottom: 21px;
+    bottom: -230px;
 }
 .landingBody__wrapper{
 width: 100%;
@@ -78,9 +78,7 @@ flex-wrap: wrap;
             width: 17rem;
             font-size: 0.875rem;
         }
-        .btnLong {
-            width: 17rem;
-        }
+        
     }
     .datepicker--content {
         padding: 5px 7px 0 9px !important;

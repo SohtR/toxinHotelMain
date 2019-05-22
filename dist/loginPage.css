@@ -57,6 +57,14 @@ main {
   background-size: cover;
   padding: 10.0625rem 0 10.125rem 0; }
 
+@media screen and (max-width: 500px) {
+  .loginPageBody__bg .card.loginAccount {
+    width: 18.75rem;
+    padding: 0.438rem 0.875rem 0.875rem 0.875rem; }
+    .loginPageBody__bg .card.loginAccount input {
+      width: 17rem;
+      font-size: 0.875rem; } }
+
 .headerButtons {
   background: #fff;
   box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
@@ -194,7 +202,7 @@ main {
 
 .footer-big__main {
   display: flex;
-  padding: 0.0625rem 0 5.625rem 0;
+  padding: 0.0625rem 0 5.69rem 0;
   justify-content: space-between;
   width: 100%; }
 
@@ -439,6 +447,10 @@ main {
   padding: 0.9375rem 0 0 0; }
   .btnLong:hover, .btnLong:active {
     opacity: 0.5; }
+
+@media screen and (max-width: 550px) {
+  .btnLong {
+    width: 17rem; } }
 
 .formEmail {
   width: 260px;
