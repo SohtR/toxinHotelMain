@@ -180,7 +180,7 @@ main {
   .landingBody__bottomText {
     display: none; } }
 
-.header {
+header {
   background: #fff;
   box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
   height: 4.375rem;
@@ -313,6 +313,9 @@ main {
 @media screen and (max-width: 500px) {
   nav {
     text-align: center; } }
+
+footer {
+  width: 100%; }
 
 .footer-big {
   width: 100%;
@@ -457,6 +460,9 @@ main {
       padding: 2rem 0 0 0; }
   .footer-big__social {
     padding: 0.563rem 0 0 0; } }
+
+.footer {
+  width: 100%; }
 
 .footer-small {
   background: #fff;

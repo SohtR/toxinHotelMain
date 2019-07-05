@@ -1,3 +1,6 @@
+footer{
+    width: 100%;
+}
 .footer-big {
     width: 100%;
     background: $white;
@@ -21,15 +24,14 @@
 
 .footer-big__logo {
     max-width: 16.25rem;
-
-    p {
+  p {
         font-family: 'Montserrat';
         font-size: 0.875rem;
         line-height: 1.5rem;
         color: rgba(31, 32, 65, 0.75);
         letter-spacing: -0.1008px;
         margin: 0.75rem 0 0 0;
-    }
+  }
 }
 
 .footer-big__menus {

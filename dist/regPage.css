@@ -195,6 +195,9 @@ main {
   nav {
     text-align: center; } }
 
+footer {
+  width: 100%; }
+
 .footer-big {
   width: 100%;
   background: #fff;

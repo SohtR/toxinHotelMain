@@ -1,3 +1,6 @@
+.footer{
+    width: 100%;
+}
 .footer-small{
     background: $white;
     margin: 2.5rem 0 0 0;
@@ -12,12 +15,12 @@ flex-direction: column;
 width: 100%;
 align-items: center;
 display: flex;
-p{
+  p{
     max-width: 35rem;
     text-align: center;
     margin: 0.875rem 0 0 0;
     line-height: 1.4375rem;
-}
+  }
 }
 
 .footer-small__logo{
