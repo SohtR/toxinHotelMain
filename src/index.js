@@ -7,10 +7,7 @@ import "./components/cardSliderRoom/flexSlider.js";
 import "./components/rangeSlider/rangeSlider.js";
 import "./js/numbercategoryselector";
 import "./js/datepicker.min.js";
+
+import "./favicons/favicons.js";
 window.$ = jQuery;
 window.jQuery = jQuery;
-console.log("hello, world");
-// import "./guest2.js";
-// import "./guest.js";
-//import "./components/twoInputRange/twoInputRange.js";
-//import "./likeButton";
