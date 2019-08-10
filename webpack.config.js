@@ -1,8 +1,5 @@
-// webpack v4
 const path = require('path');
-// const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-//const WebpackMd5Hash = require('webpack-md5-hash');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const images = require('file-loader');
 const CopyWebpackPlugin= require('copy-webpack-plugin');
@@ -42,6 +39,7 @@ module.exports = {
       {
         test: /\.(eot|svg|ttf|woff|woff2)$/,
         exclude: /img/,
+        include: /fonts/,
         use: [
                 {
                     loader: 'file-loader?name=./fonts/[name]/[name].[ext]'
@@ -54,13 +52,14 @@ module.exports = {
         exclude: /fonts/,
         use: [
           {
-            loader: 'file-loader?name=./img/[name].[ext]',
-            
-            // loader: 'file-loader',
-            // options: {
-            //   name: '[path][name].[ext]',
-            //   // publicPath: '..' // use relative path
-            // }
+            loader: 'file-loader',
+                        options: {
+                            name: './img/[name].[ext]',
+                            context: path.resolve(__dirname, "src/"),
+                            // outputPath: 'dist/',
+                            publicPath: '../',
+                            useRelativePaths: true
+                        }
           }]
       },
     
@@ -70,20 +69,17 @@ module.exports = {
     stats: 'errors-only'
   },
   plugins: [
-    // new ExtractTextPlugin(
-    //   {filename: 'style.[hash].css', disable: false, allChunks: true }
-    // ),
     new MiniCssExtractPlugin({
       filename: '[name].css',
     }),
     new CopyWebpackPlugin([{
       from: './src/fonts',
       to: './fonts'
-    },
-    {
-      from: './src/img',
-      to: './img'
-    }
+    }//,
+    // {
+    //   from: './src/img',
+    //   to: './img'
+    // }
     ]),
     new HtmlWebpackPlugin({
       inject: 'head',
@@ -115,11 +111,6 @@ module.exports = {
       filename: 'regPage.html',
       chunks: ['regPage']
     })
-    // new webpack.ProvidePlugin({
-    //   $: "./src/js/jquery-1.12.4.min.js",
-    //   jQuery: "./src/js/jquery-1.12.4.min.js",
-    //   "window.jQuery": "./src/js/jquery-1.12.4.min.js"
-    // })
-    //new WebpackMd5Hash()
+    
   ]
 };

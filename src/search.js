@@ -1,17 +1,12 @@
-import "./scss/search.scss";
-import "./js/numbercategoryselector.js";
+function importAll(resolve) {
+    resolve.keys().forEach(resolve);
+}
+
+importAll(
+    require.context('./', true, /\.(js|scss)$/)
+);
+
 import "./components/dropdownGuest/numbercategoryselectorGuest.js";
 import "./components/dropdownGuest2/numbercategoryselectorGuest2.js";
-import "./components/cardSliderRoom/jquery.flexslider.js";
-import "./components/cardSliderRoom/flexSlider.js";
-import "./components/rangeSlider/rangeSlider.js";
-import "./js/numbercategoryselector";
+import "./components/dropdownRoom/numbercategoryselector.js";
 
-import "./js/datepicker.min.js";
-window.$ = jQuery;
-window.jQuery = jQuery;
-console.log("hello, world");
-// import "./guest2.js";
-// import "./guest.js";
-//import "./components/twoInputRange/twoInputRange.js";
-//import "./likeButton";

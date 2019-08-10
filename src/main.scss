@@ -1,0 +1,125 @@
+body,
+ul,
+a{
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Montserrat';
+  font-size: 0.875rem;
+  color: rgba(31, 32, 65, 0.5);
+  list-style: none;
+  text-decoration: none;
+  outline: none;
+}
+p{
+  margin: 0;
+}
+h1{
+  font-size: 24px;
+  line-height: 30px;
+}
+h2{
+  font-size: 19px;
+  line-height: 24px;
+}
+h3{
+  font-size: 12px;
+  line-height: 15px;
+  font-family: 'MontserratBold';
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #1F2041;
+  opacity: 0.75;
+}#1F2041
+main{
+  margin: 0 auto;
+  width:100%;
+  display: flex;
+  background: #fff;
+  flex-wrap: wrap;
+}
+.form-elements{
+  width: 100%;
+  margin: 50px 0 0 0;
+  display: flex;
+  z-index: 1;
+}
+.flex{
+  display: flex;
+  margin: 20px 0 0 0;
+  form{
+    margin: 10px;
+  }
+}
+.flex-column{
+  display: flex;
+  flex-direction: column;
+  margin: auto 20px;
+  form{
+    margin: 10px;
+  }
+}
+.email{
+  h3{
+    margin: 20px 0 0 20px;
+  }
+}
+
+.clickMe{
+  h3{
+    margin: 20px;
+  }
+  .btn{
+    margin: 20px;
+  }
+  .btnFill  {
+    padding: 14.8px 19px;
+    margin: 20px;
+  }
+  .btnBorder{
+    padding: 11px 17px;
+  }
+  
+}
+
+.linkPurple{
+  font-family: 'MontserratBold';
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #BC9CFF;
+}
+.linkPurple:hover,
+.linkPurple:active{
+  color: rgba(31, 32, 65, 0.5);
+}
+.cards{
+  width: 100%;
+}
+
+.searchBody{
+  display: flex;
+  width: 100%;
+}
+.leftSide{
+  outline: 1px solid black;
+  width: 27.58%;
+  padding: 30px 0 0 0;
+  h3{
+    margin: 0 0 5px 0;
+  }
+  .filter{
+    margin: 0 0 20px 0;
+  }
+  #dropdownGuest{
+    width: 266px;
+  }
+  
+}
+
+.rightSide{
+  outline: 1px solid black;
+  width: 72.42%;
+}
+
+
+

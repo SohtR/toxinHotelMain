@@ -1,6 +1,6 @@
 .landingBody{
     width: 100%;
-    background: $white;
+    background: #fff;
 }
 .landingBody__wrapper{
     // position: relative;
@@ -8,7 +8,7 @@
 .landingBody__bg{
 width: 90rem;
 height: 51.75rem;
-background: url(../img/landingImg.jpg) no-repeat 0.125rem -4.375rem;
+background: url(./landingImg.jpg) no-repeat 0.125rem -4.375rem;
 background-size: cover; 
 margin: 0 auto;
 // position: relative;
@@ -41,7 +41,7 @@ flex-wrap: wrap;
 @media screen and (max-width: 1440px) {
 
     .landingBody__bg{
-        background: url(../img/landingImg.jpg) no-repeat 0 0;
+        background: url(./landingImg.jpg) no-repeat 0 0;
         
         
     }
@@ -72,7 +72,7 @@ flex-wrap: wrap;
             height: 2.75rem;
             font-size: 0.675rem;
             color: rgba(31, 32, 65, 0.75);
-            background: #fff url(../img/arrowDown.svg) no-repeat 5.5rem 0.6875rem;
+            background: #fff url(./arrowDown.svg) no-repeat 5.5rem 0.6875rem;
         }
         input[name="guest"] {
             width: 17rem;

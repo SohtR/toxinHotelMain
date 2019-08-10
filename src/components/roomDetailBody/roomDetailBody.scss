@@ -1,6 +1,6 @@
 .roomDetailBody{
     width: 100%;
-    background: $white;
+    background: #fff;
     h2{
       margin: 0;
       letter-spacing: -0.0313rem;
@@ -22,7 +22,7 @@ display: flex;
 
 }
 .roomDetailBody__bigImg{
-background: url(../img/roomDetailBig.jpg) no-repeat center;
+background: url(./roomDetailBig.jpg) no-repeat center;
 width: 60%;
 background-size: cover;
 }
@@ -32,13 +32,13 @@ display: flex;
 flex-direction: column;
 }
 .roomDetailBody__topImg{
-background: url(../img/roomDetailSmall-1.jpg) no-repeat center;
+background: url(./roomDetailSmall-1.jpg) no-repeat center;
 max-width: 100%;
 height: 50%;
 background-size: cover;
 }
 .roomDetailBody__bottomImg{
-background: url(../img/roomDetailSmall-2.jpg) no-repeat center;
+background: url(./roomDetailSmall-2.jpg) no-repeat center;
 width: 100%;
 max-width: 100%;
 height: 50%;
@@ -183,7 +183,7 @@ margin: 0 0 3.875rem 0;
             height: 2.75rem;
             font-size: 0.675rem;
             color: rgba(31, 32, 65, 0.75);
-            background: #fff url(../img/arrowDown.svg) no-repeat 5.5rem 0.6875rem;
+            background: #fff url(./arrowDown.svg) no-repeat 5.5rem 0.6875rem;
         }
         input[name="guest"] {
             width: 17rem;

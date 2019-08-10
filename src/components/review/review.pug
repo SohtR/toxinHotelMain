@@ -1,10 +1,9 @@
 mixin review(number,name,date,like,content)
     .review
         .review__topBlock
-            img.review__avatar(src="./img/avatar" +number+".jpg", alt="avatar")
+            img.review__avatar(src=require("./components/review/avatar" +number+".jpg"), alt="avatar")
             p.review__name <b>#{name}</b> <br>#{date}
         .review__bottomBlock
             .review__like
                 +likeButton(like)
             p.review__content=content
-

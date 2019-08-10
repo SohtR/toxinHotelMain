@@ -1,0 +1,59 @@
+body,
+ul,
+a{
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Montserrat';
+  font-size: 0.875rem;
+  color: rgba(31, 32, 65, 0.5);
+  list-style: none;
+  text-decoration: none;
+  outline: none;
+}
+p{
+  margin: 0;
+}
+h1{
+  font-size: 1.5rem;
+  line-height: 1.875rem;
+}
+h2{
+  font-size: 1.1875rem;
+  line-height: 1.5rem;
+}
+h3{
+  font-size: 0.75rem;
+  line-height: 0.9375rem;
+  font-family: 'MontserratBold';
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #1F2041;
+  opacity: 0.75;
+}
+main{
+  margin: 0 auto;
+  width:100%;
+  display: flex;
+  background: #fff;
+  flex-wrap: wrap;
+}
+
+.flex{
+  display: flex;
+  margin: 1.25rem 0 0 0;
+  form{
+    margin: 0.625rem;
+  }
+}
+
+// @import '../components/loginPageBody/loginPageBody.scss';
+// @import '../components/headerButtons/headerButtons.scss';
+// @import '../components/footerBig/footerBig.scss';
+// @import '../components/cardSearchRoom/card.scss';
+// @import '../components/cardLogin/cardLogin.scss';
+// @import 'fontFace';
+// @import '../components/btnBorder/btnBorder.scss';
+// @import '../components/btnFill/btnFill.scss';
+// @import '../components/btnLong/btnLong.scss';
+// @import '../components/emailSubscribe/emailSubscribe.scss';
+// @import '../components/textField/textField.scss';
