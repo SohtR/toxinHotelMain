@@ -1,9 +1,20 @@
 Demo Page - https://sohtr.github.io/toxinHotelMainPage/
 
-To open search rooms page press "Подобрать номер" button
+To clone repository to your local storage: git clone https://github.com/SohtR/toxinHotelMain.git
+Then you should install webpack: npm install webpack webpack-cli --save-dev
 
-To open room detail page press on the number of any room
+You can use one of the three commands:
 
-To open register page press "Зарегистрироваться" button
+    npm run dev - delete dist directory and compile project
 
-To open login page press "Войти" button
+    npm run start - start local dev-server
+
+    npm run build - mode production
+
+To open "search rooms" page press "Подобрать номер" button
+
+To open "room detail" page press on the number of any room
+
+To open "register page" press "Зарегистрироваться" button
+
+To open "login page" press "Войти" button
