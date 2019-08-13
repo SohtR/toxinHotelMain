@@ -31,7 +31,7 @@
   height: 2.75rem;
   display: inline-block;
   text-align: center;
-  background: url(../.././img/arrow_forward.png) no-repeat right 13px center, linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  background: url(../.././img/arrow-forward.png) no-repeat right 13px center, linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
   padding: 0.9375rem 0 0 0; }
   .btn.btnLong:hover, .btn.btnLong:active {
     opacity: 0.5; }
@@ -63,34 +63,6 @@
   left: -0.5625rem;
   top: 0.4375rem; }
 
-.card {
-  width: 23.75rem;
-  padding: 2.5rem 1.875rem 1.875rem 1.875rem;
-  background: #fff;
-  border: 1px solid rgba(0, 0, 0, 0.12);
-  box-sizing: border-box;
-  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
-  border-radius: 0.25rem;
-  z-index: 1; }
-  .card h1 {
-    font-family: 'MontserratBold';
-    font-size: 1.5rem;
-    line-height: 1.875rem;
-    color: #1F2041;
-    margin: 0 0 1.25rem 0;
-    letter-spacing: -0.025rem; }
-  .card .btnBorder {
-    margin: 0.125rem 0 0 2.25rem;
-    width: 6rem;
-    height: 2.5rem;
-    box-sizing: border-box;
-    display: inline-block;
-    line-height: 1.625rem; }
-  .card .haveAccount {
-    font-size: 0.875rem;
-    line-height: 1.125rem;
-    color: #000; }
-
 .loginAccount .flex {
   margin: 0rem 0 0.25rem 0; }
 
@@ -116,11 +88,11 @@
 
 .card {
   width: 23.75rem;
-  padding: 2.4375rem 1.875rem 1.875rem 1.875rem;
+  padding: 2.5rem 1.875rem 1.875rem 1.875rem;
   background: #fff;
-  border: 0.0625rem solid rgba(0, 0, 0, 0.12);
+  border: 1px solid rgba(0, 0, 0, 0.12);
   box-sizing: border-box;
-  box-shadow: 0rem 0rem 1.5625rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
   border-radius: 0.25rem;
   z-index: 1; }
   .card h1 {
@@ -168,7 +140,7 @@
 
 .card {
   width: 23.75rem;
-  padding: 2.5rem 1.875rem 1.875rem 1.875rem;
+  padding: 2.4375rem 1.875rem 1.875rem 1.875rem;
   background: #fff;
   border: 0.0625rem solid rgba(0, 0, 0, 0.12);
   box-sizing: border-box;
@@ -267,7 +239,7 @@
 
 .card {
   width: 23.75rem;
-  padding: 2.4375rem 1.875rem 1.875rem 1.875rem;
+  padding: 2.5rem 1.875rem 1.875rem 1.875rem;
   background: #fff;
   border: 0.0625rem solid rgba(0, 0, 0, 0.12);
   box-sizing: border-box;
@@ -304,6 +276,34 @@
 
 .searchRoom .dropdownGuest {
   margin: 1.25rem 0 0.5625rem 0; }
+
+.card {
+  width: 23.75rem;
+  padding: 2.4375rem 1.875rem 1.875rem 1.875rem;
+  background: #fff;
+  border: 0.0625rem solid rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  box-shadow: 0rem 0rem 1.5625rem rgba(0, 0, 0, 0.2);
+  border-radius: 0.25rem;
+  z-index: 1; }
+  .card h1 {
+    font-family: 'MontserratBold';
+    font-size: 1.5rem;
+    line-height: 1.875rem;
+    color: #1F2041;
+    margin: 0 0 1.25rem 0;
+    letter-spacing: -0.025rem; }
+  .card .btnBorder {
+    margin: 0.125rem 0 0 2.25rem;
+    width: 6rem;
+    height: 2.5rem;
+    box-sizing: border-box;
+    display: inline-block;
+    line-height: 1.625rem; }
+  .card .haveAccount {
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+    color: #000; }
 
 .cardSmall {
   width: 16.875rem;
@@ -678,62 +678,6 @@ html[xmlns] .flexslider .slides {
     text-transform: uppercase;
     color: #1F2041; }
 
-.colors-type {
-  width: 100%;
-  display: flex;
-  margin: 1.875rem 0 0 0; }
-
-.color-squares li {
-  display: flex; }
-
-.square {
-  width: 4.375rem;
-  height: 4.375rem;
-  background: #1F2041;
-  border-radius: 0.375rem; }
-
-._75 {
-  opacity: 0.75; }
-
-._50 {
-  opacity: 0.5; }
-
-._25 {
-  opacity: 0.25; }
-
-._5 {
-  opacity: 0.05; }
-
-.purple {
-  background: #BC9CFF; }
-
-.green {
-  background: #6fcf97; }
-
-.color-descript {
-  margin: 0 0 0 1.25rem; }
-  .color-descript p {
-    font-family: 'Quicksand';
-    font-size: 19px;
-    line-height: 29px;
-    color: #1F2041;
-    text-transform: uppercase;
-    margin: 0.375rem 0.625rem; }
-  .color-descript p:first-child {
-    font-family: 'QuicksandBold';
-    text-transform: none; }
-
-.headlines table tr td:first-child {
-  text-align: right;
-  padding: 0 3.125rem 0 0;
-  color: rgba(31, 32, 65, 0.25);
-  font-family: 'Montserrat';
-  font-weight: normal; }
-
-.headlines table tr td:nth-child(2) {
-  font-family: 'QuicksandBold';
-  color: #1F2041; }
-
 .filter {
   width: 16.625rem;
   height: 2.75rem;
@@ -744,7 +688,7 @@ html[xmlns] .flexslider .slides {
   font-size: 0.875rem;
   line-height: 1.125rem;
   color: rgba(31, 32, 65, 0.75);
-  background: #fff url(../.././img/arrowDown.svg) no-repeat right 0.625rem center;
+  background: #fff url(../.././img/arrow-down.svg) no-repeat right 0.625rem center;
   box-sizing: border-box; }
 
 .dataDropdown input {
@@ -757,7 +701,7 @@ html[xmlns] .flexslider .slides {
   font-size: 0.875rem;
   line-height: 1.125rem;
   color: rgba(31, 32, 65, 0.75);
-  background: #fff url(../.././img/arrowDown.svg) no-repeat 7.125rem 0.6875rem;
+  background: #fff url(../.././img/arrow-down.svg) no-repeat 7.125rem 0.6875rem;
   box-sizing: border-box; }
 
 .datepicker--cells {
@@ -844,11 +788,11 @@ html[xmlns] .flexslider .slides {
   border: none; }
 
 .datepicker--cell.-selected-.-range-from- {
-  background: url(../.././img/Rectangle_2.png) no-repeat right, url(../.././img/Rectangle_1.png) no-repeat;
+  background: url(../.././img/Rectangle-2.png) no-repeat right, url(../.././img/Rectangle-1.png) no-repeat;
   border-radius: 0; }
 
 .datepicker--cell.-selected-.-range-to- {
-  background: url(../.././img/Rectangle_2.png) no-repeat left, url(../.././img/Rectangle_1.png) no-repeat;
+  background: url(../.././img/Rectangle-2.png) no-repeat left, url(../.././img/Rectangle-1.png) no-repeat;
   border-radius: 0; }
 
 .datepicker--cell.-selected-.-focus- {
@@ -1409,10 +1353,10 @@ span[data-action='apply'] {
 
 @media screen and (max-width: 850px) {
   .datepicker--cell.-selected-.-range-from- {
-    background: url(../.././img/Rectangle_2.png) no-repeat right, url(../.././img/Rectangle_1.png) no-repeat;
+    background: url(../.././img/Rectangle-2.png) no-repeat right, url(../.././img/Rectangle-1.png) no-repeat;
     background-size: auto, cover; }
   .datepicker--cell.-selected-.-range-to- {
-    background: url(../.././img/Rectangle_2.png) no-repeat left, url(../.././img/Rectangle_1.png) no-repeat;
+    background: url(../.././img/Rectangle-2.png) no-repeat left, url(../.././img/Rectangle-1.png) no-repeat;
     background-size: auto, cover; } }
 
 input[name='guest'] {
@@ -1427,7 +1371,7 @@ input[name='guest'] {
   margin: 0 0 1.4375rem 0;
   color: rgba(31, 32, 65, 0.75);
   font-family: 'Montserrat';
-  background: #fff url(../.././img/arrowDown.svg) 17.8125rem 0.5625rem no-repeat;
+  background: #fff url(../.././img/arrow-down.svg) 17.8125rem 0.5625rem no-repeat;
   text-overflow: ellipsis;
   outline: none;
   cursor: pointer; }
@@ -1556,147 +1500,6 @@ a.guest.button.inactive {
   text-transform: uppercase;
   color: #BC9CFF; }
 
-input[name='guest2'] {
-  height: 2.75rem;
-  width: 20rem;
-  border: 0.0625rem solid rgba(31, 32, 65, 0.25);
-  box-sizing: border-box;
-  border-radius: 0.25rem 0.25rem 0 0;
-  padding: 0 1.5rem 0rem 0.9375rem;
-  font-size: 0.875rem;
-  line-height: 1.5rem;
-  margin: 0 0 1.4375rem 0;
-  color: rgba(31, 32, 65, 0.75);
-  font-family: 'Montserrat';
-  background: #fff url(../.././img/arrowDown.svg) 17.8125rem 0.5625rem no-repeat;
-  text-overflow: ellipsis;
-  outline: none;
-  cursor: pointer; }
-
-div.guest2.parent {
-  position: absolute;
-  z-index: 1000;
-  background: white;
-  border: 0.0625rem solid rgba(31, 32, 65, 0.25);
-  border-radius: 0 0 0.25rem 0.25rem;
-  box-shadow: 0 0.375rem 0.75rem rgba(0, 0, 0, 0.175);
-  padding: 0.25rem 0.3125rem 0.75rem 0.75rem;
-  text-align: center;
-  overflow: hidden;
-  min-width: 20rem;
-  box-sizing: border-box; }
-
-div.guest2.category {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start; }
-
-div.guest2.room {
-  height: 0.3125rem; }
-
-div.guest2.display {
-  overflow: hidden;
-  background: transparent;
-  z-index: 999;
-  position: absolute;
-  border-radius: 0.125rem;
-  padding: 0.3125rem 0.1563rem;
-  box-sizing: border-box;
-  align-items: center; }
-
-div.guest2.inlinedisplay {
-  height: 100%;
-  width: 625rem;
-  margin: 0 0 0 0.3125rem; }
-
-div.guest2.displayelement:before {
-  content: "";
-  display: inline-block;
-  height: 100%;
-  vertical-align: middle; }
-
-div.guest2.displayelement {
-  display: inline;
-  background: #fff;
-  color: rgba(31, 32, 65, 0.75);
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-weight: 300;
-  margin: 0 0rem 0 0;
-  padding: 0.1563rem 0rem;
-  box-sizing: border-box;
-  line-height: 1.5rem;
-  border-radius: 0.1563rem;
-  font-size: 0.875rem; }
-
-a.guest2.close {
-  opacity: 1;
-  text-align: center;
-  font-size: 0.875rem;
-  margin: 0.3125rem;
-  text-decoration: underline; }
-
-div.guest2.name {
-  font-size: 1rem;
-  float: left; }
-
-div.guest2.value {
-  font-size: 1rem; }
-
-div.guest2.text {
-  clear: both;
-  display: inline-block;
-  padding: 0.4375rem 0 0rem 0;
-  margin: 0 0 0.9375rem 0; }
-
-div.guest2.name, a.guest2.close, div.guest2.value {
-  font-family: 'MontserratBold';
-  color: #1F2041;
-  text-transform: uppercase;
-  font-size: 0.75rem;
-  line-height: 0.9375rem; }
-
-div.guest2.buttons {
-  display: flex;
-  width: 5.75rem;
-  justify-content: space-between;
-  align-items: center; }
-
-a.guest2.button {
-  color: rgba(31, 32, 65, 0.5);
-  text-decoration: none;
-  width: 1.875rem;
-  height: 1.875rem;
-  display: inline-block;
-  text-align: center;
-  background: #fff;
-  border: 0.0625rem solid rgba(31, 32, 65, 0.25);
-  box-sizing: border-box;
-  border-radius: 1.375rem;
-  box-sizing: border-box;
-  font-weight: 700;
-  line-height: 1.875rem; }
-
-a.guest2.button.inactive {
-  background: #fff;
-  opacity: 0.38; }
-
-.NCSG.reset {
-  float: left;
-  padding: 0.875rem 0 0 0.125rem;
-  font-family: 'MontserratBold';
-  font-size: 0.75rem;
-  line-height: 0.9375rem;
-  text-transform: uppercase; }
-
-.NCSG.close {
-  float: right;
-  padding: 0.875rem 0 0 0;
-  font-family: 'MontserratBold';
-  font-size: 0.75rem;
-  line-height: 0.9375rem;
-  text-transform: uppercase;
-  color: #BC9CFF; }
-
 input[name='NCS'] {
   height: 2.75rem;
   width: 16.625rem;
@@ -1709,7 +1512,7 @@ input[name='NCS'] {
   margin: 0 0 1.4375rem 0;
   color: rgba(56, 56, 77, 0.75);
   font-family: 'Montserrat';
-  background: #fff url(../.././img/arrowDown.svg) 14.5rem 0.5625rem no-repeat;
+  background: #fff url(../.././img/arrow-down.svg) 14.5rem 0.5625rem no-repeat;
   text-overflow: ellipsis;
   outline: none;
   cursor: pointer; }
@@ -1841,7 +1644,7 @@ a.NCS.button.inactive {
   .formEmail input:focus::placeholder {
     color: rgba(31, 32, 65, 0); }
   .formEmail input[type="submit"] {
-    background: url(../.././img/arrowInput.svg) no-repeat;
+    background: url(../.././img/arrow-input.svg) no-repeat;
     border: none;
     outline: none;
     margin: 0.8125rem 0 0 0.6875rem;
@@ -1898,7 +1701,7 @@ a.NCS.button.inactive {
     cursor: pointer;
     bottom: 0;
     left: 0em;
-    background: url(../.././img/arrowDown.png) no-repeat 14.875rem;
+    background: url(../.././img/arrow-down.png) no-repeat 14.875rem;
     width: 16.625rem;
     font-family: 'MontserratBold';
     font-weight: bold;
@@ -1908,7 +1711,7 @@ a.NCS.button.inactive {
     color: #1F2041; }
   #expander:checked + .exCheckLabel:after {
     content: 'Дополнительные удобства';
-    background: url(../.././img/expand_more.png) no-repeat 14.875rem;
+    background: url(../.././img/expand-more.png) no-repeat 14.875rem;
     width: 16.625rem; }
 
 #expander {
@@ -2011,17 +1814,17 @@ footer {
   display: inline-block;
   width: 1.375rem;
   height: 1.375rem;
-  background: url(../.././img/css_sprites.png) no-repeat;
+  background: url(../.././img/css-sprites.png) no-repeat;
   margin: 0 1.375rem 0 0; }
 
 .footer-big__twitter {
-  background: url(../.././img/css_sprites.png) no-repeat -0.625rem -3.25rem; }
+  background: url(../.././img/css-sprites.png) no-repeat -0.625rem -3.25rem; }
 
 .footer-big__facebook {
-  background: url(../.././img/css_sprites.png) no-repeat -0.625rem -0.625rem; }
+  background: url(../.././img/css-sprites.png) no-repeat -0.625rem -0.625rem; }
 
 .footer-big__instagram {
-  background: url(../.././img/css_sprites.png) no-repeat -3.25rem -0.625rem;
+  background: url(../.././img/css-sprites.png) no-repeat -3.25rem -0.625rem;
   margin: 0; }
 
 @media screen and (max-width: 1180px) {
@@ -2060,46 +1863,6 @@ footer {
       padding: 2rem 0 0 0; }
   .footer-big__social {
     padding: 0.563rem 0 0 0; } }
-
-.footer {
-  width: 100%; }
-
-.footer-small {
-  background: #fff;
-  margin: 2.5rem 0 0 0;
-  max-height: 22.9375rem;
-  width: 100%;
-  display: flex;
-  padding: 0 0 6.625rem 0; }
-
-.wrapper-column {
-  flex-direction: column;
-  width: 100%;
-  align-items: center;
-  display: flex; }
-  .wrapper-column p {
-    max-width: 35rem;
-    text-align: center;
-    margin: 0.875rem 0 0 0;
-    line-height: 1.4375rem; }
-
-.footer-small__logo {
-  padding: 6.3125rem 0 0 0; }
-
-.footer-small__social {
-  margin: 1.9375rem 0 0 0; }
-
-header {
-  background: #fff;
-  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
-  height: 4.375rem;
-  width: 100%;
-  margin: 2.5rem 0 0 0;
-  display: flex; }
-
-.withBorder {
-  border-left: 0.0625rem solid rgba(31, 32, 65, 0.1);
-  padding: 0.6875rem 0 0 1.9375rem; }
 
 header {
   background: #fff;
@@ -2150,7 +1913,7 @@ header {
     display: inline-block;
     width: 1.0625rem;
     height: 1.0625rem;
-    background: url(../.././img/arrowDown.svg) no-repeat;
+    background: url(../.././img/arrow-down.svg) no-repeat;
     position: absolute;
     top: -0.1875rem;
     left: 2.8rem;
@@ -2160,7 +1923,7 @@ header {
     display: inline-block;
     width: 1.0625rem;
     height: 1.0625rem;
-    background: url(../.././img/arrowDown.svg) no-repeat;
+    background: url(../.././img/arrow-down.svg) no-repeat;
     position: absolute;
     top: -0.1875rem;
     left: 5.6rem;
@@ -2236,7 +1999,7 @@ header {
 .landingBody__bg {
   width: 90rem;
   height: 51.75rem;
-  background: url(../.././img/landingImg.jpg) no-repeat 0.125rem -4.375rem;
+  background: url(../.././img/landing-img.jpg) no-repeat 0.125rem -4.375rem;
   background-size: cover;
   margin: 0 auto; }
   .landingBody__bg .card {
@@ -2262,7 +2025,7 @@ header {
 
 @media screen and (max-width: 1440px) {
   .landingBody__bg {
-    background: url(../.././img/landingImg.jpg) no-repeat 0 0; }
+    background: url(../.././img/landing-img.jpg) no-repeat 0 0; }
   .landingBody__bottomText {
     right: 5%; }
   .landingBody__bg .card {
@@ -2285,7 +2048,7 @@ header {
       height: 2.75rem;
       font-size: 0.675rem;
       color: rgba(31, 32, 65, 0.75);
-      background: #fff url(../.././img/arrowDown.svg) no-repeat 5.5rem 0.6875rem; }
+      background: #fff url(../.././img/arrow-down.svg) no-repeat 5.5rem 0.6875rem; }
     .landingBody__bg .card input[name="guest"] {
       width: 17rem;
       font-size: 0.875rem; }
@@ -2315,7 +2078,7 @@ header {
   position: relative;
   font-size: 0.625rem;
   text-decoration: none;
-  background: #fff url(../.././img/like_border.svg) no-repeat 0.25rem 0.375rem; }
+  background: #fff url(../.././img/like-border.svg) no-repeat 0.25rem 0.375rem; }
 
 .my-counter:after {
   padding: 0 0.875rem;
@@ -2350,7 +2113,7 @@ margin-right: -0.8125rem; */
 .loginPageBody__bg {
   display: flex;
   justify-content: center;
-  background: url(../.././img/loginPageBg.jpg) no-repeat center bottom;
+  background: url(../.././img/login-page-bg.jpg) no-repeat center bottom;
   background-size: cover;
   padding: 10.0625rem 0 10.125rem 0; }
 
@@ -2380,10 +2143,10 @@ margin-right: -0.8125rem; */
   color: #fff; }
 
 .pagination .next {
-  background: url(../.././img/arrow_forward.png) no-repeat center, linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+  background: url(../.././img/arrow-forward.png) no-repeat center, linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
   text-indent: -62500rem; }
   .pagination .next:hover {
-    background: url(../.././img/arrow_forward.png) no-repeat center, linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%); }
+    background: url(../.././img/arrow-forward.png) no-repeat center, linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%); }
 
 .pagination p {
   font-family: 'Montserrat';
@@ -2681,6 +2444,7 @@ a:visited.ui-button,
     transition: opacity 0.2s linear;
     background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
     -webkit-background-clip: text;
+    background-clip: text;
     color: transparent; }
 
 .rating > label:hover:before,
@@ -2694,6 +2458,7 @@ a:visited.ui-button,
   transition: opacity 0.2s linear;
   background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
   -webkit-background-clip: text;
+  background-clip: text;
   color: transparent; }
 
 .regPageBody {
@@ -2706,7 +2471,7 @@ a:visited.ui-button,
 .regPageBody__bg {
   display: flex;
   justify-content: center;
-  background: url(../.././img/loginPageBg.jpg) no-repeat center bottom;
+  background: url(../.././img/login-page-bg.jpg) no-repeat center bottom;
   background-size: cover;
   padding: 1.875rem 0 1.5rem 0; }
 
@@ -2794,7 +2559,7 @@ a:visited.ui-button,
   display: flex; }
 
 .roomDetailBody__bigImg {
-  background: url(../.././img/roomDetailBig.jpg) no-repeat center;
+  background: url(../.././img/room-detail-big.jpg) no-repeat center;
   width: 60%;
   background-size: cover; }
 
@@ -2804,13 +2569,13 @@ a:visited.ui-button,
   flex-direction: column; }
 
 .roomDetailBody__topImg {
-  background: url(../.././img/roomDetailSmall-1.jpg) no-repeat center;
+  background: url(../.././img/room-detail-small-1.jpg) no-repeat center;
   max-width: 100%;
   height: 50%;
   background-size: cover; }
 
 .roomDetailBody__bottomImg {
-  background: url(../.././img/roomDetailSmall-2.jpg) no-repeat center;
+  background: url(../.././img/room-detail-small-2.jpg) no-repeat center;
   width: 100%;
   max-width: 100%;
   height: 50%;
@@ -2927,7 +2692,7 @@ a:visited.ui-button,
       height: 2.75rem;
       font-size: 0.675rem;
       color: rgba(31, 32, 65, 0.75);
-      background: #fff url(../.././img/arrowDown.svg) no-repeat 5.5rem 0.6875rem; }
+      background: #fff url(../.././img/arrow-down.svg) no-repeat 5.5rem 0.6875rem; }
     .card.roomDetail input[name="guest"] {
       width: 17rem;
       font-size: 0.875rem; }

@@ -1,0 +1,20 @@
+header
+    .wrapper
+            a.header__logo(href="index.html") 
+                img(src=require("../components/headerButtons/color-logo.svg"), alt="Main Logo")
+            .header__nav-but-wrap
+                nav 
+                    ul.headerButtons__mainMenu
+                        li 
+                            a(href="/mock-address/change-me") О нас
+                        li
+                            a(href="/mock-address/change-me") Услуги
+                        li
+                            a(href="/mock-address/change-me") Вакансии
+                        li
+                            a(href="/mock-address/change-me") Новости
+                        li
+                            a(href="/mock-address/change-me") Соглашения
+                .headerButtons__buttons
+                    +btnBorder('войти', './login-page.html')
+                    +btnFill('зарегистрироваться', './reg-page.html')

@@ -1,0 +1,22 @@
+.headerButtons
+    .wrapper   
+        a.header__logo(href="index.html") 
+            img(src=require("../components/headerButtons/color-logo.svg"), alt="Main Logo")
+        .header__nav-but-wrap
+            nav 
+                ul.headerButtons__mainMenu
+                    li.active 
+                        a(href="/mock-address/change-me") Home
+                    li 
+                        a(href="/mock-address/change-me") About Us
+                    li
+                        a(href="/mock-address/change-me") Services
+                    li
+                        a(href="/mock-address/change-me") Careers
+                    li
+                        a(href="/mock-address/change-me") News
+                    li
+                        a(href="/mock-address/change-me") Documentation
+            .headerButtons__buttons
+                +btnBorder('login', "./login-page.html")
+                +btnFill('register')

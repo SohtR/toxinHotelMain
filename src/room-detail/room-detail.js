@@ -10,5 +10,5 @@ importAll(
 );
 
 import "../components/dropdownRoom/numbercategoryselector.js";
-import "../components/dropdownGuest/numbercategoryselectorGuest.js";
+import "../components/dropdownGuest/numbercategoryselector-guest.js";
 
