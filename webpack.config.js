@@ -5,11 +5,11 @@ const images = require('file-loader');
 const CopyWebpackPlugin= require('copy-webpack-plugin');
 module.exports = {
   entry: {
-    index: './src/index.js',
-    search: './src/search.js',
-    roomDetail: './src/roomDetail.js',
-    loginPage: './src/loginPage.js',
-    regPage: './src/regPage.js',
+    index: './src/index/index.js',
+    search: './src/search/search.js',
+    roomDetail: './src/room-detail/room-detail.js',
+    loginPage: './src/login-page/login-page.js',
+    regPage: './src/reg-page/reg-page.js',
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -57,7 +57,7 @@ module.exports = {
                             name: './img/[name].[ext]',
                             context: path.resolve(__dirname, "src/"),
                             // outputPath: 'dist/',
-                            publicPath: '../',
+                            publicPath: '../../',
                             useRelativePaths: true
                         }
           }]
@@ -83,32 +83,32 @@ module.exports = {
     ]),
     new HtmlWebpackPlugin({
       inject: 'head',
-      template: './src/search.pug',
+      template: './src/search/search.pug',
       filename: 'search.html',
       chunks: ['search']
     }),
     new HtmlWebpackPlugin({
       inject: 'head',
-      template: './src/index.pug',
+      template: './src/index/index.pug',
       filename: 'index.html',
       chunks: ['index']
     }),
     new HtmlWebpackPlugin({
       inject: 'head',
-      template: './src/roomDetail.pug',
-      filename: 'roomDetail.html',
+      template: './src/room-detail/room-detail.pug',
+      filename: 'room-detail.html',
       chunks: ['roomDetail']
     }),
     new HtmlWebpackPlugin({
       inject: 'head',
-      template: './src/loginPage.pug',
-      filename: 'loginPage.html',
+      template: './src/login-page/login-page.pug',
+      filename: 'login-page.html',
       chunks: ['loginPage']
     }),
     new HtmlWebpackPlugin({
       inject: 'head',
-      template: './src/regPage.pug',
-      filename: 'regPage.html',
+      template: './src/reg-page/reg-page.pug',
+      filename: 'reg-page.html',
       chunks: ['regPage']
     })
     

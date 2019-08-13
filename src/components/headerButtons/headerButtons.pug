@@ -1,7 +1,7 @@
 .headerButtons
     .wrapper   
         a.header__logo(href="index.html") 
-            img(src=require("./components/footerBig/colorLogo.svg"), alt="Main Logo")
+            img(src=require("../components/headerButtons/colorLogo.svg"), alt="Main Logo")
         .header__nav-but-wrap
             nav 
                 ul.headerButtons__mainMenu
@@ -18,5 +18,5 @@
                     li
                         a(href="/mock-address/change-me") Documentation
             .headerButtons__buttons
-                +btnBorder('login', "./loginPage.html")
+                +btnBorder('login', "./login-page.html")
                 +btnFill('register')
