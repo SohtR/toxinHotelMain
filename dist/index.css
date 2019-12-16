@@ -1969,8 +1969,8 @@ header {
 
 @media screen and (max-width: 850px) {
   header {
-    height: 7rem;
-    margin: 0px 0 30px 0; }
+    height: 9rem;
+    padding: 0px 0 30px 0; }
   .headerButtons {
     padding: 0.1875rem 0 24px 0;
     height: 100%; }
@@ -1989,8 +1989,8 @@ header {
   nav {
     text-align: center; }
   header {
-    height: 8rem;
-    margin: 0px 0 30px 0; } }
+    height: 10rem;
+    padding: 0px 0 30px 0; } }
 
 .landingBody {
   width: 100%;
